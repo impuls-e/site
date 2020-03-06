@@ -2,5 +2,5 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  background-image: radial-gradient(circle, #0875cf3d 20%, white 80%);
+  background-color: #fff !important;
 }

@@ -48,6 +48,7 @@ html {
 }
 .layout .container {
   padding: 50px 5%;
+  background-color: #303f49;
 }
 @media (min-width: 768px) {
   html {

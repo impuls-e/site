@@ -3,10 +3,12 @@
   flex-direction: column;
   background-color: #fff;
   align-items: center;
+  padding: 50px 2% !important;
 }
 .services h3 {
   font-weight: 700;
-  color: #707072;
+  color: #fff;
+  padding: 0 10%;
 }
 .services h3 span {
   font-weight: normal;
@@ -33,18 +35,19 @@
 .services .service .icon {
   font-size: 60px;
   align-self: center;
-  color: #464c4d;
+  color: #71f4fa;
   transition: transform 0.3s, font-size 0.3s, color 0.3s;
 }
 .services .services-section .service:hover .icon {
-  color: #707072;
+  color: #71f4fa;
 }
 .services .service h4 {
   margin-bottom: 10px;
+  color: #707072;
 }
 
 .services .service p {
-  color: #00000096;
+  color: #fff;
 }
 .services button {
   width: 240px;

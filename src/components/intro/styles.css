@@ -5,6 +5,7 @@
   justify-content: center;
   flex: 1;
   flex-direction: column;
+  background-color: #303f49;
 }
 .intro .about {
   display: flex;
@@ -12,40 +13,35 @@
 }
 .intro .image {
   width: 100%;
+
+  animation-duration: 3s;
+  animation-name: moveHorizontal;
+  animation-iteration-count: infinite;
 }
 .intro .image .gatsby-image-wrapper {
   max-width: 356px;
 }
 .intro .gatsby-image-wrapper img {
   max-width: 356px;
-  animation-duration: 2s;
-  animation-name: moveHorizontal;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 @keyframes moveHorizontal {
   from {
-    transform: translate3d(15%, -0%, 0);
+    transform: translate3d(0%, 30%, 0);
   }
 
   to {
-    transform: translate3d(-10%, -0%, 0);
+    transform: translate3d(0%, 10%, 0);
   }
 }
 
-div {
-  animation-duration: 0.1s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 .intro h1 {
-  font-family: "Rubik-BoldItalic", sans-serif;
+  font-family: "Rubik-Bold", sans-serif;
   color: #71f4fa;
   font-size: 4rem;
 }
 .intro h2 {
-  color: #707072;
+  font-family: "Rubik-BoldItalic", sans-serif;
+  color: #fff;
 }
 @media (min-width: 768px) {
   .intro {
@@ -57,6 +53,7 @@ div {
   }
   .intro .image {
     width: 40%;
+    height: 100%;
   }
 }
 @media (min-width: 1024px) {

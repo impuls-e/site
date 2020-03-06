@@ -5,7 +5,7 @@
 }
 
 .contact h3 {
-  color: #707072;
+  color: #fff;
 }
 
 .contact .contact-section {
@@ -22,7 +22,7 @@
 }
 
 .contact .contact-info p {
-  color: #00000096;
+  color: #707072;
   margin-bottom: 15px;
 }
 
@@ -67,7 +67,7 @@
 .contact form label {
   display: flex;
   flex-direction: column;
-  color: #00000096;
+  color: #707072;
   margin-bottom: 10px;
 }
 
@@ -138,7 +138,7 @@
   margin-top: 5%;
 }
 .contact .social-icons a {
-  color: #000;
+  color: #71f4fa;
   text-align: center;
 }
 @media (min-width: 768px) {
