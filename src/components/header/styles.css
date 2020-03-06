@@ -1,0 +1,173 @@
+header {
+  height: 80px;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5%;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  transition: background-color 0.1s ease-out, transform 0.8s ease-out;
+  z-index: 2;
+}
+header.move {
+  background-color: transparent;
+}
+header.click {
+  background-color: #fff;
+}
+header .logoIcon {
+  font-size: 32px;
+  color: #71f4fa;
+  transition: transform 0.3s ease-out, opacity 0.3s,
+    -webkit-transform 0.3s ease-out;
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+  position: absolute;
+  left: 5.5%;
+  pointer-events: none;
+}
+header .logoIcon.move {
+  opacity: 1;
+
+  pointer-events: visible;
+  transform: translate3d(0%, 0, 0);
+}
+header .logo {
+  width: 200px;
+  font-size: 40px;
+  color: #71f4fa;
+  font-family: "Rubik-Bold", sans-serif;
+  transition: transform 0.3s ease-out, opacity 0.3s;
+}
+header .logo.move {
+  transform: translate3d(0%, -220%, 0);
+}
+header ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  background: black;
+  transform: translate3d(0%, -220%, 0);
+  transition: transform 0.8s ease-out, opacity 0.8s;
+  padding: 50px 10%;
+}
+header ul.click {
+  transform: translate3d(0%, 0%, 0);
+}
+header ul.click li {
+  margin: 1.5rem 0;
+}
+
+header li a {
+  position: relative;
+  color: #707072e8;
+  font-size: 20px;
+  margin: 0 1rem;
+  font-family: "Rubik-Regular", sans-serif;
+  outline: none;
+}
+header ul a:hover {
+  color: #707072;
+}
+header ul li:hover a::after {
+  width: 1.6rem;
+}
+header ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 0;
+  height: 0.15rem;
+  background-color: #71f4fa;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+header button {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+}
+header button p {
+  color: #71f4fa;
+  font-size: 16px;
+}
+header .icon {
+  color: #71f4fa;
+  font-size: 32px;
+  transition: transform 0.3s ease-out, opacity 0.3s,
+    -webkit-transform 0.3s ease-out;
+  position: absolute;
+  right: 5%;
+  padding: 3%;
+  /* opacity: 0;
+  transform: translate3d(100%, 0, 0);
+  pointer-events: none; */
+}
+header .icon.move {
+  pointer-events: all;
+  opacity: 1;
+  cursor: pointer;
+  transform: translate3d(0%, 0, 0);
+}
+header .icon.click {
+  pointer-events: all;
+  opacity: 1 !important;
+  cursor: pointer;
+  transform: translate3d(0%, 0, 0) !important;
+}
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    padding: 0 10%;
+  }
+  header ul {
+    transform: translate3d(0%, 0%, 0);
+    transition: transform 0.8s ease-out, opacity 0.8s;
+    position: initial;
+    padding: 0;
+    background-color: transparent;
+    min-height: initial;
+    flex-direction: row;
+    top: auto;
+    left: auto;
+    justify-content: flex-end;
+  }
+  header .logoIcon {
+    left: 3%;
+  }
+  header .icon {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    pointer-events: none;
+  }
+  header .icon.move {
+    right: 0.5%;
+  }
+  header ul {
+    transition: transform 0.3s ease-out, opacity 0.3s;
+  }
+  header ul.move {
+    transform: translate3d(0%, -230%, 0);
+  }
+  header ul.click {
+    transform: translate3d(0%, 0%, 0);
+  }
+}
+@media (min-width: 1024px) {
+  header ul {
+    margin-right: 3%;
+  }
+}
