@@ -5,7 +5,7 @@ const config = {
   siteTitleShort: "IP",
   siteRss: "/rss.xml",
   siteImage: "",
-  googleAnalyticsID: "UA-141117092-8",
+  googleAnalyticsID: "UA-141117092-12",
   themeColor: "#000000",
   backgroundColor: "#fff",
   siteUrl: "http://impulse.works",
