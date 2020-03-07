@@ -25,22 +25,30 @@ html {
   font-family: "Rubik-Regular", sans-serif;
 }
 .layout h1 {
-  font-size: 2rem;
+  font-size: 5.5rem;
+  font-weight: lighter;
+  letter-spacing: -1.5px;
 }
 .layout h2 {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  font-weight: lighter;
+  letter-spacing: -0.5px;
 }
 
 .layout h3 {
-  font-size: 2rem;
+  font-size: 2.75rem;
   margin-bottom: 30px;
 }
 .layout h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.25px;
 }
 
 .layout p {
-  font-size: 1.4rem;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
 }
 
 .layout a {

@@ -13,10 +13,11 @@
 }
 .intro .image {
   width: 100%;
-
-  animation-duration: 3s;
-  animation-name: moveHorizontal;
-  animation-iteration-count: infinite;
+  transform: translate3d(0%, 30%, 0);
+  transition: 3s transform ease-in;
+}
+.intro .image.click {
+  transform: translate3d(0%, 10%, 0);
 }
 .intro .image .gatsby-image-wrapper {
   max-width: 356px;
@@ -24,24 +25,36 @@
 .intro .gatsby-image-wrapper img {
   max-width: 356px;
 }
-@keyframes moveHorizontal {
-  from {
-    transform: translate3d(0%, 30%, 0);
-  }
-
-  to {
-    transform: translate3d(0%, 10%, 0);
-  }
-}
 
 .intro h1 {
   font-family: "Rubik-Bold", sans-serif;
   color: #71f4fa;
-  font-size: 4rem;
 }
 .intro h2 {
   font-family: "Rubik-BoldItalic", sans-serif;
   color: #fff;
+}
+.intro a {
+  margin-top: 30px;
+  width: 240px;
+  min-width: 216px;
+  border-radius: 25px;
+  background-color: white;
+  font-size: 1rem;
+  color: #71f4fa;
+  border: 1px solid #9a9a9a;
+  height: 50px;
+  font-weight: 400;
+  margin-top: 25px;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s,
+    opacity 0.3s, color 0.3s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .intro {
@@ -49,10 +62,10 @@
     align-items: center;
   }
   .intro .about {
-    width: 60%;
+    width: 75%;
   }
   .intro .image {
-    width: 40%;
+    width: 25%;
     height: 100%;
   }
 }

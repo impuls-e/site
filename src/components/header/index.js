@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "./styles.css"
 import { Link, useStaticQuery } from "gatsby"
 import useDocumentScrollThrottled from "../useDocumentScrollThrottled/"
-import { FaPizzaSlice } from "react-icons/fa"
+import { FaRocket } from "react-icons/fa"
 import HamburgerMenu from "react-hamburger-menu"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Img from "gatsby-image"
@@ -62,7 +62,7 @@ export default function Header() {
           <Img fluid={img} alt="A logo from impulse" />
         </AnchorLink>
         <AnchorLink className={`logoIcon ${moveStyle} `} to="/" title="home">
-          <FaPizzaSlice />
+          <FaRocket />
         </AnchorLink>
         <ul className={`menu ${clickStyle}  ${moveStyle} `}>
           <li>
