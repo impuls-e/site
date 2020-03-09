@@ -26,6 +26,10 @@ const SEO = ({ title, description, image, pathname, article }) => (
       return (
         <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
+            <meta
+              name="google-site-verification"
+              content="6ono1job-Zov9EJpbYygR5LlE9fwCFD2S9pWvRaJEzY"
+            />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <meta charSet="utf-8" />
