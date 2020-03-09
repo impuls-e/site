@@ -57,5 +57,11 @@ module.exports = {
         trackingId: config.googleAnalyticsID,
       },
     },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "pt-BR",
+      },
+    },
   ],
 }
