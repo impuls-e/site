@@ -42,8 +42,8 @@ export default function Header() {
               title
               imgUrl {
                 childImageSharp {
-                  fluid(maxHeight: 270) {
-                    ...GatsbyImageSharpFluid
+                  fixed(width: 200, height: 80) {
+                    ...GatsbyImageSharpFixed
                   }
                 }
               }
@@ -53,13 +53,13 @@ export default function Header() {
       }
     }
   `)
-  const img = data.allMdx.edges[0].node.frontmatter.imgUrl.childImageSharp.fluid
+  const img = data.allMdx.edges[0].node.frontmatter.imgUrl.childImageSharp.fixed
 
   return (
     <>
       <header className={`header ${moveStyle} ${clickStyle}`}>
         <AnchorLink className={`logo ${moveStyle} `} to="/" title="home">
-          <Img fluid={img} alt="A logo from impulse" />
+          <Img fixed={img} alt="A logo from impulse" />
         </AnchorLink>
         <AnchorLink className={`logoIcon ${moveStyle} `} to="/" title="home">
           <FaRocket />
@@ -67,12 +67,12 @@ export default function Header() {
         <ul className={`menu ${clickStyle}  ${moveStyle} `}>
           <li>
             <AnchorLink to="#projects" title="Our projects">
-              <span>Projetos</span>
+              Projetos
             </AnchorLink>
           </li>
           <li>
             <AnchorLink to="#services" title="Our services">
-              <span>Serviços</span>
+              Serviços
             </AnchorLink>
           </li>
           <li>
@@ -80,14 +80,16 @@ export default function Header() {
           </li>
           <li>
             <AnchorLink to="#contact" title="Contact us">
-              <span>Contato</span>
+              Contato
             </AnchorLink>
           </li>
         </ul>
-        <a className={`icon ${moveStyle} ${clickStyle}  `}>
+        <button
+          onClick={handleClick}
+          className={`icon ${moveStyle} ${clickStyle}  `}
+        >
           <HamburgerMenu
             isOpen={hamburguer}
-            menuClicked={handleClick}
             width={25}
             height={16}
             strokeWidth={2}
@@ -96,7 +98,7 @@ export default function Header() {
             borderRadius={0}
             animationDuration={0.5}
           />
-        </a>
+        </button>
       </header>
     </>
   )
