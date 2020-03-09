@@ -11,37 +11,29 @@ header {
   transition: background-color 0.1s ease-out, transform 0.8s ease-out;
   z-index: 2;
 }
-header.move {
-  background-color: transparent;
-}
-header.click {
-  background-color: #fff;
-}
+
 header .logoIcon {
-  font-size: 32px;
+  font-size: 32px !important;
   color: #71f4fa;
   transition: transform 0.3s ease-out, opacity 0.3s,
     -webkit-transform 0.3s ease-out;
-  opacity: 0;
-  transform: translate3d(-100%, 0, 0);
+  opacity: 1;
+  transform: translate3d(0%, 0, 0);
   position: absolute;
   left: 5.5%;
 }
-header .logoIcon.move {
-  opacity: 1;
 
-  pointer-events: visible;
-  transform: translate3d(0%, 0, 0);
-}
 header .logo {
   width: 200px;
-  font-size: 40px;
+  font-size: 0px !important;
   color: #71f4fa;
   font-family: "Rubik-Bold", sans-serif;
+  transform: translate3d(0%, -220%, 0);
   transition: transform 0.3s ease-out, opacity 0.3s;
+  margin-left: 10%;
 }
 header .logo.move {
-  transform: translate3d(0%, -220%, 0);
+  transform: translate3d(0%, 0%, 0);
 }
 header ul {
   display: flex;
@@ -55,7 +47,7 @@ header ul {
   left: 0;
   background: black;
   transform: translate3d(0%, -220%, 0);
-  transition: transform 0.8s ease-out, opacity 0.8s;
+  transition: transform 0.6s ease-out, opacity 0.6s ease;
   padding: 50px 10%;
 }
 header ul.click {
@@ -64,56 +56,25 @@ header ul.click {
 header ul.click li {
   margin: 1.5rem 0;
 }
-
 header li a {
   position: relative;
-  color: #707072e8;
-  font-size: 20px;
+  color: #fff;
+  font-size: 20px !important;
   margin: 0 1rem;
   font-family: "Rubik-Regular", sans-serif;
   outline: none;
 }
-header ul a:hover {
-  color: #ffffff;
-}
-header ul li:hover a::after {
-  width: 1.6rem;
-}
-header ul li a::after {
-  content: "";
-  position: absolute;
-  bottom: -0.5rem;
-  left: 0;
-  width: 0;
-  height: 0.15rem;
-  background-color: #71f4fa;
-  -webkit-transition: width 0.2s;
-  transition: width 0.2s;
-}
-
-header button {
-  width: 40px;
-  height: 40px;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  background-color: #000;
-}
-header button p {
-  color: #71f4fa;
-  font-size: 16px;
-}
 header .icon {
+  background-color: transparent;
+  border: none;
   color: #71f4fa;
   font-size: 32px;
   transition: transform 0.3s ease-out, opacity 0.3s,
     -webkit-transform 0.3s ease-out;
   position: absolute;
-  right: 5%;
-  padding: 3%;
-  /* opacity: 0;
-  transform: translate3d(100%, 0, 0);
-  */
+  right: 0.5%;
+  padding: 4%;
+  cursor: pointer;
   pointer-events: visible;
 }
 header .icon.move {
@@ -127,11 +88,33 @@ header .icon.click {
   opacity: 1 !important;
   transform: translate3d(0%, 0, 0) !important;
 }
+/* ## Media Queries ## */
 @media (min-width: 768px) {
   header {
     flex-direction: row;
     padding: 0 10%;
   }
+  header.click {
+    background-color: #fff;
+  }
+  header .logo {
+    margin-left: 0%;
+  }
+  header .logoIcon {
+    transition: transform 0.3s ease-out, opacity 0.3s,
+      -webkit-transform 0.3s ease-out;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+    pointer-events: none;
+  }
+
+  header .logoIcon.move {
+    opacity: 1;
+    display: flex;
+    pointer-events: visible;
+    transform: translate3d(0%, 0, 0);
+  }
+
   header ul {
     transform: translate3d(0%, 0%, 0);
     transition: transform 0.8s ease-out, opacity 0.8s;
@@ -143,6 +126,31 @@ header .icon.click {
     top: auto;
     left: auto;
     justify-content: flex-end;
+  }
+  header li a {
+    position: relative;
+    color: #707072e8;
+    font-size: 20px;
+    margin: 0 1rem;
+    font-family: "Rubik-Regular", sans-serif;
+    outline: none;
+  }
+  header ul a:hover {
+    color: #ffffff;
+  }
+  header ul li:hover a::after {
+    width: 1.6rem;
+  }
+  header ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 0;
+    height: 0.15rem;
+    background-color: #71f4fa;
+    -webkit-transition: width 0.2s;
+    transition: width 0.2s;
   }
   header .logoIcon {
     left: 3%;
