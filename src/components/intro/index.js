@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import "./styles.css"
 import { graphql, useStaticQuery } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import Img from "gatsby-image"
 
@@ -19,8 +18,8 @@ export default function Intro() {
                 title
                 imgUrl {
                   childImageSharp {
-                    fluid(maxHeight: 270) {
-                      ...GatsbyImageSharpFluid
+                    fixed(height: 270, width: 140) {
+                      ...GatsbyImageSharpFixed
                     }
                   }
                 }
@@ -31,25 +30,26 @@ export default function Intro() {
       }
     `
   )
-  const img = data.allMdx.edges[0].node.frontmatter.imgUrl.childImageSharp.fluid
+  const img = data.allMdx.edges[0].node.frontmatter.imgUrl.childImageSharp.fixed
 
   const clickStyle = movClick ? "click" : ""
 
   function handleClick() {
     setMovClick(!movClick)
+    setTimeout(() => {
+      document.getElementById("#contact").scrollIntoView()
+    }, 1500)
   }
   return (
     <>
       <div className="container intro">
         <div className="about">
-          <h1>Impuls-e</h1>
+          <h1>Impulse</h1>
           <h2>Um salto no seu negócio</h2>
-          <AnchorLink to="#contact" title="Our contact">
-            Decolar
-          </AnchorLink>
+          <button onClick={handleClick}>Entre em contato</button>
         </div>
         <div className={`image ${clickStyle}`}>
-          <Img fluid={img} alt="A super hero, very fast" />
+          <Img fixed={img} alt="A super hero, very fast" />
         </div>
       </div>
     </>
