@@ -46,6 +46,10 @@ export default function Intro() {
         <div className="about">
           <h1>Impulse</h1>
           <h2>Um salto no seu negócio</h2>
+          <p>
+            Páginas rápidas e com excelente SEO para seu site crescer nas
+            pesquisas do google.
+          </p>
           <button onClick={handleClick}>Entre em contato</button>
         </div>
         <div className={`image ${clickStyle}`}>

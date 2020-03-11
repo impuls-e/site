@@ -3,18 +3,30 @@
   height: 100vh;
   justify-content: center;
   flex: 1;
-  flex-direction: column-reverse;
+  flex-direction: column;
   background-color: #303f49;
 }
+
 .intro .about {
   display: flex;
   flex-direction: column;
+  animation: 600ms ease 600ms 1 normal forwards running animation;
+  opacity: 0;
 }
 .intro .image {
   width: 100%;
   transition: 1.7s transform ease-in;
   display: flex;
   justify-content: center;
+}
+@keyframes animation {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .intro .image.click {
   transform: translate3d(0%, -200%, 0);
@@ -32,6 +44,10 @@
 }
 .intro h2 {
   font-family: "Rubik-BoldItalic", sans-serif;
+  color: #fff;
+}
+.intro p {
+  font-family: "Rubik-Bold", sans-serif;
   color: #fff;
 }
 .intro button {
