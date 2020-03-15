@@ -76,7 +76,7 @@ export default function Header() {
             </AnchorLink>
           </li>
           <li>
-            <Link to="/blog">Blog</Link>
+            <Link to="/">Blog</Link>
           </li>
           <li>
             <AnchorLink to="#contact" title="Contact us">
