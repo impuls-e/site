@@ -1,7 +1,7 @@
 import React from "react"
 
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
-
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import "./styles.css"
 
 export default function Contact() {
@@ -14,15 +14,15 @@ export default function Contact() {
           <p>+55 (48) 999-208-659 </p>
           <p> contato@devpizza.com.br</p>
           <div className="social-icons">
-            <a href="https://github.com/impuls-e">
+            <OutboundLink href="https://github.com/impuls-e">
               <FaGithub />
-            </a>
-            <a href="#">
+            </OutboundLink>
+            <OutboundLink href="https://google.com.br">
               <FaInstagram />
-            </a>
-            <a href="https://www.linkedin.com/company/impuls-e/">
+            </OutboundLink>
+            <OutboundLink href="https://www.linkedin.com/company/impuls-e/">
               <FaLinkedinIn />
-            </a>
+            </OutboundLink>
           </div>
         </div>
         <div className="contact-form">
