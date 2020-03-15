@@ -48,13 +48,19 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "standalone",
-        icon: "static/favicon.svg",
+        icon: "src/images/favicon.png",
       },
     },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: config.googleAnalyticsID,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "pt-BR",
       },
     },
   ],
