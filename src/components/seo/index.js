@@ -41,7 +41,14 @@ const SEO = ({ title, description, image, pathname, article }) => (
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
+            {seo.image && <meta property="og:image" content={seo.image} />}
             {seo.image && <meta property="og:image:url" content={seo.image} />}
+
+            {seo.image && (
+              <meta property="og:image:type" content="image/jpeg" />
+            )}
+            {seo.image && <meta property="og:image:width" content="400" />}
+            {seo.image && <meta property="og:image:height" content="300" />}
             <meta name="twitter:card" content="summary_large_image" />
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />
