@@ -126,6 +126,10 @@ header .icon.click {
     top: auto;
     left: auto;
     justify-content: flex-end;
+    height: 100%;
+  }
+  header li {
+    height: 100%;
   }
   header li a {
     position: relative;
@@ -134,6 +138,9 @@ header .icon.click {
     margin: 0 1rem;
     font-family: "Rubik-Regular", sans-serif;
     outline: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
   header ul a:hover {
     color: #ffffff;
@@ -144,7 +151,7 @@ header .icon.click {
   header ul li a::after {
     content: "";
     position: absolute;
-    bottom: -0.5rem;
+    bottom: 1rem;
     left: 0;
     width: 0;
     height: 0.15rem;
