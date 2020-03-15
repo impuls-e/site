@@ -37,7 +37,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -78,5 +77,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-advanced-sitemap`,
   ],
 }
