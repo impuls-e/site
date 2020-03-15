@@ -4,6 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import Img from "gatsby-image"
 
+import { SocialProfileJsonLd } from "gatsby-plugin-next-seo"
+
 export default function Intro() {
   const [movClick, setMovClick] = useState(false)
 
@@ -42,6 +44,17 @@ export default function Intro() {
   }
   return (
     <>
+      <SocialProfileJsonLd
+        type="Person"
+        name="Impulse"
+        url="https://impuls-e.works/"
+        sameAs={[
+          "https://www.facebook.com/worksimpulse",
+          "https://instagram.com/impulse.works",
+          "https://www.linkedin.com/company/impuls-e",
+          "https://github.com/impuls-e",
+        ]}
+      />
       <div className="container intro">
         <div className="about">
           <h1>Impulse</h1>

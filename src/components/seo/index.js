@@ -66,17 +66,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
               <meta name="twitter:description" content={seo.description} />
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
-            <SocialProfileJsonLd
-              type="Person"
-              name="Impulse"
-              url="https://impuls-e.works/"
-              sameAs={[
-                "https://www.facebook.com/worksimpulse",
-                "https://instagram.com/impulse.works",
-                "https://www.linkedin.com/company/impuls-e",
-                "https://github.com/impuls-e",
-              ]}
-            />
           </Helmet>
         </>
       )
