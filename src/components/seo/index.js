@@ -46,7 +46,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
             {seo.image && (
               <meta
                 property="og:image"
-                content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9O5LnEWKl4CyIHnYP98yTsQO6lgnkr8G5BEyG8vtCzxsj13EK"
+                content="https://images.cdn3.stockunlimited.net/clipart/rocket_2029341.jpg"
               />
             )}
 
@@ -55,8 +55,8 @@ const SEO = ({ title, description, image, pathname, article }) => (
             {seo.image && (
               <meta property="og:image:type" content="image/jpeg" />
             )}
-            {seo.image && <meta property="og:image:width" content="400" />}
-            {seo.image && <meta property="og:image:height" content="300" />}
+            {seo.image && <meta property="og:image:width" content="200" />}
+            {seo.image && <meta property="og:image:height" content="200" />}
             <meta name="twitter:card" content="summary_large_image" />
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />
