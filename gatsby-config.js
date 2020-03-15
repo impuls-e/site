@@ -4,7 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const config = require("./data/config")
-const configRobots = require("./data/configRobots")
 
 module.exports = {
   siteMetadata: {
@@ -67,7 +66,16 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        configFile: "robots-txt.config.js",
+        host: "https://impuls-e.works",
+        sitemap: "https://impuls-e.works/sitemap.xml",
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
       },
     },
   ],
