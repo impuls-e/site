@@ -13,7 +13,7 @@ module.exports = {
       "Conceitos de design com inovação digital para criar plataformas web e mobile fáceis de usar e que trazem resultados.",
     url: "https://impulse.works",
     siteUrl: "https://impulse.works", // No trailing slash allowed!
-    image: `${__dirname}/src/images/impulse.png`, // Path to your image you placed in the 'static' folder
+    image: `${__dirname}/src/images/rocket.png`, // Path to your image you placed in the 'static' folder
     twitterUsername: "@impuls-e",
   },
   plugins: [
