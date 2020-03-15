@@ -14,13 +14,13 @@ export default function Contact() {
           <p>+55 (48) 999-208-659 </p>
           <p> contato@devpizza.com.br</p>
           <div className="social-icons">
-            <a href="www.google.com.br">
+            <a href="https://github.com/impuls-e">
               <FaGithub />
-            </a>{" "}
-            <a href="">
+            </a>
+            <a href="#">
               <FaInstagram />
-            </a>{" "}
-            <a href="">
+            </a>
+            <a href="https://www.linkedin.com/company/impuls-e/">
               <FaLinkedinIn />
             </a>
           </div>
