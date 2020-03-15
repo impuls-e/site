@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const config = require("./data/config")
+const configRobots = require("./data/configRobots")
 
 module.exports = {
   siteMetadata: {
@@ -61,6 +62,12 @@ module.exports = {
       resolve: "gatsby-plugin-html-attributes",
       options: {
         lang: "pt-BR",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        configFile: "robots-txt.config.js",
       },
     },
   ],
