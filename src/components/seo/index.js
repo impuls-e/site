@@ -43,7 +43,13 @@ const SEO = ({ title, description, image, pathname, article }) => (
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
-            {seo.image && <meta property="og:image" content={seo.image} />}
+            {seo.image && (
+              <meta
+                property="og:image"
+                content="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ9O5LnEWKl4CyIHnYP98yTsQO6lgnkr8G5BEyG8vtCzxsj13EK"
+              />
+            )}
+
             {seo.image && <meta property="og:image:url" content={seo.image} />}
 
             {seo.image && (
