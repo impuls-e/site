@@ -17,7 +17,7 @@ export default function Contact() {
             <OutboundLink href="https://github.com/impuls-e">
               <FaGithub />
             </OutboundLink>
-            <OutboundLink href="https://google.com.br">
+            <OutboundLink href="https://www.instagram.com/impulse.works/">
               <FaInstagram />
             </OutboundLink>
             <OutboundLink href="https://www.linkedin.com/company/impuls-e/">

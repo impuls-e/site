@@ -26,6 +26,7 @@
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-manifest": "^2.2.42",
     "gatsby-plugin-mdx": "^1.0.74",
+    "gatsby-plugin-next-seo": "^1.4.0",
     "gatsby-plugin-offline": "^3.0.35",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-robots-txt": "^1.5.0",
