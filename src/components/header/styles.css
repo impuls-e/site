@@ -54,7 +54,7 @@ header ul.click {
   transform: translate3d(0%, 0%, 0);
 }
 header ul.click li {
-  margin: 1.5rem 0;
+  height: 80px;
 }
 header li a {
   position: relative;
@@ -63,6 +63,9 @@ header li a {
   margin: 0 1rem;
   font-family: "Rubik-Regular", sans-serif;
   outline: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 header .icon {
   background-color: transparent;
