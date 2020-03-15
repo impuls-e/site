@@ -21,7 +21,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname}`,
+        url: `${siteUrl}${pathname || "/"}`,
       }
       return (
         <>
@@ -35,8 +35,10 @@ const SEO = ({ title, description, image, pathname, article }) => (
             <meta charSet="utf-8" />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {(article ? true : null) && (
-              <meta property="og:type" content="website" />
+              <meta property="og:type" content="article" />
             )}
+            <meta property="og:type" content="website" />
+
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && (
               <meta property="og:description" content={seo.description} />
