@@ -57,14 +57,14 @@ export default function ProjetosSlick() {
   return (
     <div className="">
       <Slider {...settings}>
-        {projects.map((project, i) => (
+        {projects.map(project => (
           <div
             key={generateKey(project.node.frontmatter.title)}
             className="carousel-item"
           >
             <Img
               fluid={project.node.frontmatter.imgUrl.childImageSharp.fluid}
-              alt="A corgi smiling happily"
+              alt="An image apresentation from current project"
             />
             <div className="info-item">
               <h4>{project.node.frontmatter.title}</h4>

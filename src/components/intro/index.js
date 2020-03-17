@@ -85,7 +85,7 @@ export default function Intro() {
           </button>
         </div>
         <div className={`image ${clickStyle}`}>
-          <Img fixed={img} alt="A super hero, very fast" />
+          <Img fixed={img} alt="A rocket" />
         </div>
       </div>
     </>
