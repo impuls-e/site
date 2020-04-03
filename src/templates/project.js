@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Header from "../components/header"
+import IntroProjects from "../components/introProjects"
 import Contact from "../components/contact"
 
 const ProjectTemplate = ({ pageContext }) => {
@@ -10,8 +11,7 @@ const ProjectTemplate = ({ pageContext }) => {
     <Layout>
       <Seo />
       <Header />
-      <h1>{project.title}</h1>
-      <div>{project.description}</div>
+      <IntroProjects />
       <Contact />
     </Layout>
   )

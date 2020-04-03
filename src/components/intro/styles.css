@@ -85,8 +85,3 @@
     width: 25%;
   }
 }
-@media (min-width: 1024px) {
-  header ul {
-    margin-right: 3%;
-  }
-}

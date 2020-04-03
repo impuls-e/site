@@ -1,0 +1,6 @@
+.intro-projects {
+  display: flex;
+  background-color: #303f49;
+  height: 80vh;
+  padding: 80px 10vw;
+}
