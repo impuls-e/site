@@ -1,5 +1,5 @@
 <img src="./src/img/gelux.png" align="center"></img>
-<h1 align="center">Gelux</h1>
+<h1 align="center">Impuls-e</h1>
 <p align="center">Site institucional da empresa<strong> Impuls-e</strong>.</p>
 
 ## Descrição
