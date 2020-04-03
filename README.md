@@ -1,15 +1,30 @@
-# Type scale 'Font Rubik'
+<img src="./src/img/gelux.png" align="center"></img>
+<h1 align="center">Gelux</h1>
+<p align="center">Site institucional da empresa<strong> Impuls-e</strong>.</p>
 
-- h1 Weight: Light - Size: 99px - Letter spacing: -1.5px
+## Descrição
+Um salto no seu negócio.
+Páginas rápidas e com excelente SEO para seu site crescer nas pesquisas do google.
 
-- h2 Weight: Light - Size: 62px - Letter spacing: -0.5px
+## Solução
+[Site](https://geluxeletrica.com.br/) desenvolvido com o framework Gatsby.
+Segue abaixo algumas informações sobre o resultado.
 
-- h3 Weight: Normal - Size: 49px - Letter spacing: 0px
+> Todas as informações são baseadas na tela **Mobile** e foram tiradas do site [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) > - By Google
 
-- h4 Weight: Normal - Size: 35px - Letter spacing: 0.25px
+- A nota da página foi de **83** pontos.
+- O tempo que o primeiro conteúdo é desenhado na tela foi de **1.3 s**.
+- O índice de velocidade foi de **1.3 s**.
+- O tempo que a página leva para ficar completamente interativa foi de **5.1 s**. 
 
-- h5 Weight: Normal - Size: 25px - Letter spacing: 0px
+Print
 
-- p Weight: Medium - Size: 16px - Letter spacing: 0.5px
+PageSpeedTest Impuls-e                                         |  
+:-----------------------------------------------------------:|
+<img src="./src/img/pageSpeedTest.png" align="center"/>   | 
 
-- button Weight: Medium - Size: 21px - Letter spacing: 0.15px
+
+### LINKS
+
+[PageSpeedTest Impuls-e](https://developers.google.com/speed/pagespeed/insights/?url=impuls-e.works)
+
