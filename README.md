@@ -1,4 +1,4 @@
-<img src="./src/img/gelux.png" align="center"></img>
+<img src="./src/img/impulse.png" align="center"></img>
 <h1 align="center">Impuls-e</h1>
 <p align="center">Site institucional da empresa<strong> Impuls-e</strong>.</p>
 
@@ -21,7 +21,7 @@ Print
 
 PageSpeedTest Impuls-e                                         |  
 :-----------------------------------------------------------:|
-<img src="./src/img/pageSpeedTest.png" align="center"/>   | 
+<img src="./src/img/pagespeedinsights.png" align="center"/>   | 
 
 
 ### LINKS
