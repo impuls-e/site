@@ -97,6 +97,7 @@ export default function Header() {
             color="#71f4fa"
             borderRadius={0}
             animationDuration={0.5}
+            menuClicked={undefined}
           />
         </button>
       </header>
