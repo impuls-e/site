@@ -1,31 +1,28 @@
 import React from "react"
 import "./styles.css"
+import { FaExternalLinkAlt } from "react-icons/fa"
 
-export default function introProjects() {
+export default function introProjects({
+  title,
+  description,
+  services,
+  liveUrl,
+}) {
   return (
     <div className="intro-projects">
       <section>
-        <h1>Sobre o Projeto</h1>
-        <p>
-          A Gelux considera importante manter um canal de contato duradouro e de
-          fácil acesso para se comunicar com seus clientes. Foi pensando também
-          em fortalecer a imagem da empresa e disponibilizar informações
-          importantes para seus clientes que a Gelux quer o desenvolvimento do
-          seu site institucional.
-        </p>
+        <h4>Cliente</h4>
+        <h1>{title}</h1>
+        <h4>Sobre o Projeto</h4>
+        <p>{description}</p>
       </section>
       <aside>
-        <h2>Cliente</h2>
-        <strong>Gelux</strong>
-        <h2>Serviços</h2>
-        <strong>
-          Analytics & Insight - SEO - Velocidade - Google Business - SSL -
-          Hospedagem
-        </strong>
-        <h2>Website</h2>
-        <strong>
-          <a href="https://geluxeletrica.com.br">Geluxeletrica.com.br</a>
-        </strong>
+        <h4>Serviços</h4>
+        <p>{services}</p>
+        <h4>Website</h4>
+        <a className="site" href={liveUrl}>
+          Site {title} <FaExternalLinkAlt />
+        </a>
       </aside>
     </div>
   )

@@ -11,7 +11,12 @@ const ProjectTemplate = ({ pageContext }) => {
     <Layout>
       <Seo />
       <Header />
-      <IntroProjects />
+      <IntroProjects
+        title={project.title}
+        description={project.description}
+        liveUrl={project.liveUrl}
+        services={project.services}
+      />
       <Contact />
     </Layout>
   )

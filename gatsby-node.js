@@ -18,6 +18,8 @@ exports.createPages = async ({ graphql, actions }) => {
               description
               title
               handle
+              services
+              liveUrl
             }
           }
         }

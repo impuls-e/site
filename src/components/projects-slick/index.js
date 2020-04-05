@@ -1,6 +1,6 @@
 import React from "react"
 import Slider from "react-slick"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import "./styles.css"
@@ -39,6 +39,7 @@ export default function ProjetosSlick() {
             frontmatter {
               description
               title
+              handle
               imgUrl {
                 childImageSharp {
                   fluid(maxHeight: 270) {
@@ -55,24 +56,25 @@ export default function ProjetosSlick() {
 
   const projects = data.allMdx.edges
   return (
-    <div className="">
-      <Slider {...settings}>
-        {projects.map(project => (
-          <div
-            key={generateKey(project.node.frontmatter.title)}
-            className="carousel-item"
-          >
-            <Img
-              fluid={project.node.frontmatter.imgUrl.childImageSharp.fluid}
-              alt="An image apresentation from current project"
-            />
-            <div className="info-item">
-              <h4>{project.node.frontmatter.title}</h4>
-              <p>{project.node.frontmatter.description}</p>
-            </div>
+    <Slider {...settings}>
+      {projects.map(project => (
+        <div
+          key={generateKey(project.node.frontmatter.title)}
+          className="carousel-item"
+        >
+          <Img
+            fluid={project.node.frontmatter.imgUrl.childImageSharp.fluid}
+            alt="An image apresentation from current project"
+          />
+          <div className="info-item">
+            <h4>{project.node.frontmatter.title}</h4>
+            <p>{project.node.frontmatter.description}</p>
           </div>
-        ))}
-      </Slider>
-    </div>
+          <Link to={`/project/${project.node.frontmatter.handle}`}>
+            Saiba Mais
+          </Link>
+        </div>
+      ))}
+    </Slider>
   )
 }
