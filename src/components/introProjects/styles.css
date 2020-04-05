@@ -1,0 +1,67 @@
+.intro-projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #303f49;
+  height: 100vh;
+  padding: 15vh 5vw 0;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.intro-projects section {
+  display: flex;
+  flex-direction: column;
+}
+.intro-projects aside {
+  display: flex;
+  flex-direction: column;
+}
+.intro-projects h1 {
+  margin-left: 1%;
+  color: #fff;
+}
+.intro-projects h1:after {
+  content: "";
+  position: relative;
+  bottom: 0.5rem;
+  left: 7px;
+  width: 7rem;
+  height: 0.2rem;
+  background-color: #71f4fa;
+  display: flex;
+  border-radius: 4px;
+}
+.intro-projects h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 5vh;
+}
+.intro-projects p {
+  margin-left: 0.5%;
+  color: #fff;
+}
+.intro-projects a {
+  margin-left: 1%;
+  color: #fff;
+}
+.intro-projects aside .site {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  align-items: center;
+}
+.intro-projects aside .site svg {
+  margin-left: 1vw;
+}
+@media (min-width: 768px) {
+  .intro-projects {
+    flex-direction: row;
+    padding: 15vh 10vw 0;
+  }
+  .intro-projects section {
+    width: 70%;
+    padding-right: 5vw;
+  }
+  .intro-projects aside {
+    width: 30%;
+  }
+}

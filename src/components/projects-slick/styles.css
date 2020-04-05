@@ -23,7 +23,32 @@
 .projetos .carousel-item .info-item {
   padding: 0 20px;
 }
-
+.projetos .carousel-item a {
+  color: #00000096;
+  width: 240px;
+  min-width: 216px;
+  border-radius: 25px;
+  background-color: white;
+  font-size: 1rem;
+  border: 1px solid #9a9a9a;
+  height: 50px;
+  font-weight: 400;
+  margin-top: 25px;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s,
+    opacity 0.3s, color 0.3s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projetos .carousel-item a:hover {
+  color: #fff;
+  border-color: #707072;
+  background-color: #707072;
+}
 .projetos h3 {
   color: #707072;
 }

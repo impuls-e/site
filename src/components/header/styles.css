@@ -138,7 +138,7 @@ header .icon.click {
     position: relative;
     color: #707072e8;
     font-size: 20px;
-    margin: 0 1rem;
+    margin: 0 0 0 1rem;
     font-family: "Rubik-Regular", sans-serif;
     outline: none;
     height: 100%;
@@ -148,9 +148,13 @@ header .icon.click {
   header ul a:hover {
     color: #ffffff;
   }
+  header ul.click a:hover {
+    color: #303f49;
+  }
   header ul li:hover a::after {
     width: 1.6rem;
   }
+
   header ul li a::after {
     content: "";
     position: absolute;
@@ -186,7 +190,4 @@ header .icon.click {
   }
 }
 @media (min-width: 1024px) {
-  header ul {
-    margin-right: 3%;
-  }
 }
