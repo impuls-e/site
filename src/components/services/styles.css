@@ -75,14 +75,17 @@
 @media (min-width: 768px) {
   .services .services-section .service {
     margin: 0% 1%;
-    padding: 3% 1% 4%;
+    padding: 3% 3% 4%;
   }
   .services .services-section {
     flex-direction: row;
   }
-}
-@media (min-width: 768px) {
-  .services .services-section .service {
-    padding: 3% 3% 4%;
+
+  .services .service h4 {
+    text-align: center;
+  }
+
+  .services .service p {
+    text-align: center;
   }
 }

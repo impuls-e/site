@@ -78,6 +78,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-advanced-schema`,
+    {
+      resolve: "gatsby-plugin-extract-schema",
+      options: {
+        dest: `${__dirname}/path/to/schema.json`,
+      },
+    },
     `gatsby-plugin-next-seo`,
   ],
 }
