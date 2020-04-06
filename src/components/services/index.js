@@ -51,7 +51,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <button>Fale sobre o seu projeto</button>
     </div>
   )
 }

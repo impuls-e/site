@@ -1,11 +1,11 @@
-.contact {
+.layout .container.contact {
   display: flex;
-  background-color: #ffffffd1;
+  background-color: #fff;
   flex-direction: column;
 }
 
 .contact h3 {
-  color: #fff;
+  color: #707072;
 }
 
 .contact .contact-section {
