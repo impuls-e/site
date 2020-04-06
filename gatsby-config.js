@@ -78,7 +78,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-advanced-sitemap`,
-    `gatsby-plugin-advanced-schema`,
     {
       resolve: "gatsby-plugin-extract-schema",
       options: {
