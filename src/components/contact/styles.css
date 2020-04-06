@@ -147,6 +147,12 @@
 }
 
 @media (min-width: 768px) {
+  .layout .container.contact {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 15vh 10% 10vh;
+  }
   .contact .contact-section {
     display: flex;
     flex-direction: row-reverse;
