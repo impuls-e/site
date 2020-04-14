@@ -1,16 +1,15 @@
 import React from "react"
 import "./styles.css"
 import { IoIosPeople } from "react-icons/io"
-import { FaTools } from "react-icons/fa"
 import { MdDevices } from "react-icons/md"
 
 export default function Services() {
   return (
     <div id="services" className="container services">
-      <h3>
-        Conceitos de design com inovação digital para criar plataformas web e
-        mobile fáceis de usar e que trazem resultados.
-      </h3>
+      <h4>
+        Diminuimos consideravelmente a taxa de rejeição e aumentamos a conversão
+        e retenção dos usuários.
+      </h4>
       <div className="services-section">
         <div className="service">
           <div className="icon">
@@ -19,25 +18,13 @@ export default function Services() {
           <div className="service-about">
             <h4>Criação e Otimização</h4>
             <p>
-              Sites rápidos com layouts modernos, adaptáveis a todos os
-              dispositivos, oferencendo uma melhor experiência para o seu
-              cliente.
+              Desenvolvimento de páginas utilizando a arquitetura JAMSTACK,
+              conseguimos trazer uma melhor performance, escalabilidade, mais
+              segurança e alta produtividade para o desenvolvedor.
             </p>
           </div>
         </div>
-        <div className="service">
-          <div className="icon">
-            <FaTools />
-          </div>
-          <div className="service-about">
-            <h4>Seo e Velocidade</h4>
-            <p>
-              Práticas de SEO para melhor posicionamento do seu site nas
-              pesquisas no google, aumentando o tráfego dos usuários e a
-              relevância do seu negócio.
-            </p>
-          </div>
-        </div>
+
         <div className="service">
           <div className="icon">
             <MdDevices />

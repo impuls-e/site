@@ -60,8 +60,8 @@ export default function Intro() {
           <h1>Impulse</h1>
           <h2>Um salto no seu negócio</h2>
           <p>
-            Páginas rápidas e com excelente SEO para seu site crescer nas
-            pesquisas do google.
+            Páginas com alta performance melhorando a conversão dos seus
+            clientes.
           </p>
           <button
             onClick={e => {

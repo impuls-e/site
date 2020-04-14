@@ -3,7 +3,7 @@
   height: 100vh;
   justify-content: center;
   flex: 1;
-  flex-direction: column;
+  flex-direction: column-reverse;
   background-color: #303f49;
 }
 
@@ -66,6 +66,7 @@
   transition: transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s,
     opacity 0.3s, color 0.3s;
   outline: none;
+  align-self: center;
 }
 .intro button:hover {
   color: #fff;

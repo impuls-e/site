@@ -57,7 +57,7 @@ html {
   letter-spacing: 0.15px;
 }
 .layout .container {
-  padding: 50px 5%;
+  padding: 15vh 5vw 0;
   background-color: #303f49;
 }
 @media (min-width: 768px) {
