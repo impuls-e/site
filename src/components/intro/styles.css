@@ -85,4 +85,7 @@
   .intro .image {
     width: 25%;
   }
+  .intro button {
+    align-self: flex-start;
+  }
 }
