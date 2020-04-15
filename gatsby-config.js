@@ -10,7 +10,7 @@ module.exports = {
     title: "Impulse",
     titleTemplate: "%s · Um salto no seu negócio",
     description:
-      "Conceitos de design com inovação digital para criar plataformas web e mobile fáceis de usar e que trazem resultados.",
+      "Conceitos de design com inovação digital para criar sites e landing pages fáceis de usar e que trazem resultados.",
     url: "https://impulse.works",
     siteUrl: "https://impulse.works", // No trailing slash allowed!
     image: `${__dirname}/src/images/impulse.png`, // Path to your image you placed in the 'static' folder

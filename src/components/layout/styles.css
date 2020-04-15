@@ -1,17 +1,4 @@
 @font-face {
-  font-family: "Rubik-Regular";
-  src: url("../../fonts/Rubik-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Rubik-Italic";
-  src: url("../../fonts/Rubik-Italic.ttf");
-}
-@font-face {
-  font-family: "Rubik-BoldItalic";
-  src: url("../../fonts/Rubik-BoldItalic.ttf");
-}
-@font-face {
   font-family: "Rubik-Bold";
   src: url("../../fonts/Rubik-Bold.ttf");
 }
@@ -30,17 +17,17 @@ html {
   letter-spacing: -1.5px;
 }
 .layout h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: lighter;
   letter-spacing: -0.5px;
 }
 
 .layout h3 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 .layout h4 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: normal;
   letter-spacing: 0.25px;
 }

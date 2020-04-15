@@ -10,9 +10,10 @@ export default function Contact() {
       <h3>Vamos construir algo incrível juntos?</h3>
       <div className="contact-section">
         <div className="contact-info">
-          <p>+55 (48) 999-101-220 </p>
-          <p>+55 (48) 999-208-659 </p>
-          <p> contato@devpizza.com.br</p>
+          <p>+55 (48) 999-101-220</p>
+          <p>+55 (48) 999-208-659</p>
+          <p>contato@devpizza.com.br</p>
+          <p>Localizado em Florianópolis</p>
           <div className="social-icons">
             <OutboundLink href="https://github.com/impuls-e">
               <FaGithub />

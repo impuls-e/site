@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 10%;
+  text-align: center;
 }
 
 .contact .contact-info p {

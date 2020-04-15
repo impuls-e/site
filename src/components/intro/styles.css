@@ -38,17 +38,26 @@
   max-width: 356px;
 }
 
-.intro h1 {
-  font-family: "Rubik-Bold", sans-serif;
-  color: #71f4fa;
-}
 .intro h2 {
-  font-family: "Rubik-BoldItalic", sans-serif;
-  color: #fff;
+  color: #71f4fa;
+
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: -1.5px;
 }
 .intro p {
-  font-family: "Rubik-Bold", sans-serif;
   color: #fff;
+
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.intro h1 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 .intro button {
   width: 240px;

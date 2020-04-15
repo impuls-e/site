@@ -57,12 +57,12 @@ export default function Intro() {
       />
       <div className="container intro">
         <div className="about">
-          <h1>Impulse</h1>
-          <h2>Um salto no seu negócio</h2>
-          <p>
-            Páginas com alta performance melhorando a conversão dos seus
-            clientes.
-          </p>
+          <h2>Impulse</h2>
+          <p>Um salto no seu negócio</p>
+          <h1>
+            Sites e Landing Pages com alta performance melhorando a conversão
+            dos seus clientes.
+          </h1>
           <button
             onClick={e => {
               // To stop the page reloading
