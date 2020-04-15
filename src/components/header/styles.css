@@ -27,7 +27,6 @@ header .logo {
   width: 200px;
   font-size: 0px !important;
   color: #71f4fa;
-  font-family: "Rubik-Bold", sans-serif;
   transform: translate3d(0%, -220%, 0);
   transition: transform 0.3s ease-out, opacity 0.3s;
   margin-left: 10%;
@@ -61,7 +60,6 @@ header li a {
   color: #fff;
   font-size: 20px !important;
   margin: 0 1rem;
-  font-family: "Rubik-Regular", sans-serif;
   outline: none;
   height: 100%;
   display: flex;
@@ -139,7 +137,6 @@ header .icon.click {
     color: #c1c1c1e8;
     font-size: 20px;
     margin: 0 0 0 1rem;
-    font-family: "Rubik-Regular", sans-serif;
     outline: none;
     height: 100%;
     display: flex;
