@@ -1,11 +1,19 @@
 .intro-background {
-  background-image: url("https://delinx.digital/static/background-01-tablet-desktop-36ebbe46e31d55b0ff7292db26176c86.jpg");
   width: 100vw;
   height: 100vh;
-  content: "";
-  position: fixed;
-  top: 0;
-  z-index: 0;
+  position: fixed !important;
+  animation: zoomInOut 10s infinite;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 header {
   position: fixed;
@@ -40,7 +48,7 @@ header .hamburguermenu div {
   transform: rotate(0);
 }
 header .hamburguermenu:hover div {
-  border: 2px solid #01a6bac7 !important;
+  border: 2px solid #7557c7c7 !important;
 }
 header .hamburguermenu div:nth-child(2) {
   width: 30px;
@@ -67,7 +75,7 @@ header .logo {
   transition: all 0.2s ease-in-out;
 }
 header .logo:hover {
-  color: #01a6bac7;
+  color: #7557c7c7;
 }
 header ul {
   visibility: hidden;
@@ -108,7 +116,7 @@ header li a {
   opacity: 0;
 }
 header li:hover a {
-  color: #01a6bac7;
+  color: #7557c7c7;
 }
 header ul li:nth-child(1) a {
   transition: color 0.2s ease-in, visibility 0.4s ease-in-out,
@@ -139,7 +147,7 @@ header li a:after {
   transition: all 0.4s ease-in-out;
 }
 header li:hover a:after {
-  background-color: #01a6bac7;
+  background-color: #7557c7c7;
 }
 
 /* ## Media Queries ## */

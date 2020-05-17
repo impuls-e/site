@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, #01a6bac7, #000000bf 72.71%);
+  background: linear-gradient(to right, #7557c7c7, #000000bf 72.71%);
 }
 /* #7557c7c7, #01a6baeb */
 /* .intro:before {
@@ -29,7 +29,7 @@
   font-size: 48px;
   color: #fff;
   transform: rotate(-45deg);
-
+  -moz-transform: translate(0, 150px) rotate(-45deg);
   animation: mymove 2s infinite;
 }
 .intro .image {

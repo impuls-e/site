@@ -3,27 +3,13 @@ import "./styles.css"
 import { Link, useStaticQuery } from "gatsby"
 import useDocumentScrollThrottled from "../useDocumentScrollThrottled/"
 import { FaRocket } from "react-icons/fa"
-import HamburgerMenu from "react-hamburger-menu"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 
 export default function Header() {
   const [movScroll, setMovScroll] = useState(false)
   const [movClick, setMovClick] = useState(false)
   const [hamburguer, setHamburguer] = useState(false)
-
-  const MINIMUM_SCROLL = 80
-  const TIMEOUT_DELAY = 400
-
-  useDocumentScrollThrottled(callbackData => {
-    const { previousScrollTop, currentScrollTop } = callbackData
-    const isScrolledDown = previousScrollTop < currentScrollTop
-    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL
-
-    setTimeout(() => {
-      setMovScroll(isScrolledDown && isMinimumScrolled)
-    }, TIMEOUT_DELAY)
-  })
 
   const moveStyle = movScroll ? "move" : ""
   const clickStyle = movClick ? "click" : ""
@@ -40,24 +26,29 @@ export default function Header() {
             frontmatter {
               description
               title
-              imgUrl {
-                childImageSharp {
-                  fixed(width: 200, height: 80) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-              }
             }
+          }
+        }
+      }
+      desktop: file(relativePath: { eq: "bg.jpg" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
     }
   `)
-  const img = data.allMdx.edges[0].node.frontmatter.imgUrl.childImageSharp.fixed
+  const imageData = data.desktop.childImageSharp.fluid
 
   return (
     <>
-      <div className="intro-background" />
+      <BackgroundImage
+        Tag="section"
+        className={"intro-background"}
+        fluid={imageData}
+      />
+      <BackgroundImage className="intro-background" />
       <header className={`header`}>
         <button
           onClick={handleClick}
