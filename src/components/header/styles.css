@@ -16,9 +16,8 @@ header {
   width: 7vw;
   height: 100vh;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 0 9px 0 rgba(44, 43, 57, 0.16);
-  padding: 4vh 0;
-  background-color: transparent;
-  transition: background-color 0.1s ease-out, transform 0.8s ease-out;
+
+  background-color: #fff;
   z-index: 2;
 }
 header .hamburguermenu {
@@ -28,145 +27,123 @@ header .hamburguermenu {
   pointer-events: visible;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 40px;
-  height: 30px;
+  justify-content: space-evenly;
+  width: 48px;
+  height: 48px;
+  margin-top: 4vh;
 }
 header .hamburguermenu div {
   width: 40px;
-  border: 2px solid #fff;
+  border: 2px solid #707072;
   border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(0);
+}
+header .hamburguermenu:hover div {
+  border: 2px solid #01a6bac7 !important;
+}
+header .hamburguermenu div:nth-child(2) {
+  width: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+header .hamburguermenu.click div:nth-child(1) {
+  transform: rotate(45deg) translate(9px, 8px);
+  border: 2px solid #707072;
+}
+header .hamburguermenu.click div:nth-child(2) {
+  opacity: 0;
+  visibility: hidden;
+}
+header .hamburguermenu.click div:nth-child(3) {
+  transform: rotate(-45deg) translate(10px, -10px);
+  border: 2px solid #707072;
 }
 
 header .logo {
+  margin-bottom: 4vh;
   font-size: 32px;
-  color: #fff;
+  color: #707072;
+  transition: all 0.2s ease-in-out;
 }
-
+header .logo:hover {
+  color: #01a6bac7;
+}
 header ul {
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
   position: absolute;
-  width: 100%;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
-  background: black;
-  transform: translate3d(0%, -220%, 0);
-  transition: transform 0.6s ease-out, opacity 0.6s ease;
-  padding: 50px 10%;
+  flex-direction: column;
+  background: #fff;
+  padding: 18vh 1vw;
+  margin-left: 4.5vw;
+  height: 100vh;
+  width: 12vw;
+  transition: opacity 0.2s ease-out, visibility 0.2s ease-out,
+    box-shadow 2s ease-in-out;
+  z-index: -2;
 }
 header ul.click {
-  transform: translate3d(0%, 0%, 0);
+  visibility: visible;
+  opacity: 1;
 }
-header ul.click li {
-  height: 80px;
+header ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4vh;
+  height: 50px;
+  padding: 1vw;
+  border-radius: 0 5px 5px 0;
 }
 header li a {
   position: relative;
-  color: #fff;
-  font-size: 20px !important;
-  margin: 0 1rem;
+  color: #707072;
+  font-size: 1.5rem;
   outline: none;
-  height: 100%;
   display: flex;
-  align-items: center;
+  text-decoration: none;
+  transform: translateX(-10vw);
+  visibility: hidden;
+  opacity: 0;
+}
+header li:hover a {
+  color: #01a6bac7;
+}
+header ul li:nth-child(1) a {
+  transition: color 0.2s ease-in, visibility 0.4s ease-in-out,
+    transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+header ul li:nth-child(2) a {
+  transition: color 0.2s ease-in, visibility 0.6s ease-in-out,
+    transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+header ul li:nth-child(3) a {
+  transition: color 0.2s ease-in, visibility 0.8s ease-in-out,
+    transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+header ul.click li a {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+header li a:after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 55%;
+  height: 2px;
+  background-color: #707072;
+  transition: all 0.4s ease-in-out;
+}
+header li:hover a:after {
+  background-color: #01a6bac7;
 }
 
 /* ## Media Queries ## */
 @media (min-width: 768px) {
-  header.click {
-    background-color: #fff;
-  }
-  header .logo {
-    margin-left: 0%;
-  }
-  header .logoIcon {
-    transition: transform 0.3s ease-out, opacity 0.3s,
-      -webkit-transform 0.3s ease-out;
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-    pointer-events: none;
-  }
-
-  header .logoIcon.move {
-    opacity: 1;
-    display: flex;
-    pointer-events: visible;
-    transform: translate3d(0%, 0, 0);
-  }
-
-  header ul {
-    transform: translate3d(0%, 0%, 0);
-    transition: transform 0.8s ease-out, opacity 0.8s;
-    position: initial;
-    padding: 0;
-    background-color: transparent;
-    min-height: initial;
-    flex-direction: row;
-    top: auto;
-    left: auto;
-    justify-content: flex-end;
-    height: 100%;
-  }
-  header li {
-    height: 100%;
-  }
-  header li a {
-    position: relative;
-    color: #c1c1c1e8;
-    font-size: 20px;
-    margin: 0 0 0 1rem;
-    outline: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  header ul a:hover {
-    color: #ffffff;
-  }
-  header ul.click a:hover {
-    color: #303f49;
-  }
-  header ul li:hover a::after {
-    width: 1.6rem;
-  }
-
-  header ul li a::after {
-    content: "";
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    width: 0;
-    height: 0.15rem;
-    background-color: #71f4fa;
-    -webkit-transition: width 0.2s;
-    transition: width 0.2s;
-  }
-  header .logoIcon {
-    left: 3%;
-
-    pointer-events: none;
-  }
-  header .icon {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-    pointer-events: none;
-  }
-  header .icon.move {
-    right: 0.5%;
-  }
-  header ul {
-    transition: transform 0.3s ease-out, opacity 0.3s;
-  }
-  header ul.move {
-    transform: translate3d(0%, -230%, 0);
-  }
-  header ul.click {
-    transform: translate3d(0%, 0%, 0);
-  }
 }
 @media (min-width: 1024px) {
 }

@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, #7557c7c7, #000000bf 72.71%);
+  background: linear-gradient(to right, #01a6bac7, #000000bf 72.71%);
 }
 /* #7557c7c7, #01a6baeb */
 /* .intro:before {
@@ -62,13 +62,13 @@
 
 @keyframes title {
   0% {
-    transform: rotate3d(0);
+    transform: rotate3d(0, 0, 0, 0);
   }
   33% {
-    transform: rotate3d(1, 1, 1, 3deg);
+    transform: rotate3d(0, 1, 0.1, 15deg);
   }
   66% {
-    transform: rotate3d(1, 1, 1, -3deg);
+    transform: rotate3d(0, 1, 0.1, -15deg);
   }
 }
 .intro .image.click {
@@ -83,10 +83,10 @@
 
 .intro h1 {
   color: #fff;
-  font-size: 5rem;
-  font-weight: 800;
+  font-size: 6rem;
+  font-weight: 900;
   margin-bottom: 3vh;
-  animation: title 6s infinite;
+  animation: title 8s infinite;
 }
 .intro h2 {
   color: #fff;
@@ -109,10 +109,9 @@
   padding: 0.6em 1em;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s,
-    opacity 0.3s, color 0.3s;
   outline: none;
   align-self: center;
+  transition: all 0.3s ease-in;
 }
 .intro button:hover {
   border-color: #fff;

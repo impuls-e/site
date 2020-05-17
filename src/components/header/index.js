@@ -58,7 +58,7 @@ export default function Header() {
   return (
     <>
       <div className="intro-background" />
-      <header className={`header ${moveStyle} ${clickStyle}`}>
+      <header className={`header`}>
         <button
           onClick={handleClick}
           className={`hamburguermenu ${clickStyle}  `}
