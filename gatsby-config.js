@@ -77,6 +77,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/svgs`, // See below to configure properly
+        },
+      },
+    },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: "gatsby-plugin-extract-schema",

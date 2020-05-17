@@ -57,13 +57,20 @@ export default function Header() {
 
   return (
     <>
+      <div className="intro-background" />
       <header className={`header ${moveStyle} ${clickStyle}`}>
+        <button
+          onClick={handleClick}
+          className={`hamburguermenu ${clickStyle}  `}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
         <AnchorLink className={`logo ${moveStyle} `} to="/" title="home">
-          <Img fixed={img} alt="A logo from impulse" />
-        </AnchorLink>
-        <AnchorLink className={`logoIcon ${moveStyle} `} to="/" title="home">
           <FaRocket />
         </AnchorLink>
+
         <ul className={`menu ${clickStyle}  ${moveStyle} `}>
           <li>
             <AnchorLink
@@ -89,22 +96,6 @@ export default function Header() {
             </AnchorLink>
           </li>
         </ul>
-        <button
-          onClick={handleClick}
-          className={`icon ${moveStyle} ${clickStyle}  `}
-        >
-          <HamburgerMenu
-            isOpen={hamburguer}
-            width={25}
-            height={16}
-            strokeWidth={2}
-            rotate={0}
-            color="#71f4fa"
-            borderRadius={0}
-            animationDuration={0.5}
-            menuClicked={undefined}
-          />
-        </button>
       </header>
     </>
   )

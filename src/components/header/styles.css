@@ -1,41 +1,50 @@
-header {
-  height: 80px;
-  display: flex;
+.intro-background {
+  background-image: url("https://delinx.digital/static/background-01-tablet-desktop-36ebbe46e31d55b0ff7292db26176c86.jpg");
+  width: 100vw;
+  height: 100vh;
+  content: "";
   position: fixed;
-  flex-direction: row;
+  top: 0;
+  z-index: 0;
+}
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 0 5%;
   justify-content: space-between;
-  width: 100%;
-  background-color: #303f49;
+  width: 7vw;
+  height: 100vh;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 0 9px 0 rgba(44, 43, 57, 0.16);
+  padding: 4vh 0;
+  background-color: transparent;
   transition: background-color 0.1s ease-out, transform 0.8s ease-out;
   z-index: 2;
 }
-
-header .logoIcon {
-  font-size: 32px !important;
-  color: #71f4fa;
-  transition: transform 0.3s ease-out, opacity 0.3s,
-    -webkit-transform 0.3s ease-out;
-  opacity: 1;
-  transform: translate3d(0%, 0, 0);
-  position: absolute;
-  left: 5.5%;
+header .hamburguermenu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  pointer-events: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 30px;
+}
+header .hamburguermenu div {
+  width: 40px;
+  border: 2px solid #fff;
+  border-radius: 3px;
 }
 
 header .logo {
-  width: 200px;
-  font-size: 0px !important;
-  color: #71f4fa;
-  transform: translate3d(0%, -220%, 0);
-  transition: transform 0.3s ease-out, opacity 0.3s;
-  margin-left: 10%;
+  font-size: 32px;
+  color: #fff;
 }
-header .logo.move {
-  transform: translate3d(0%, 0%, 0);
-}
+
 header ul {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -65,36 +74,9 @@ header li a {
   display: flex;
   align-items: center;
 }
-header .icon {
-  background-color: transparent;
-  border: none;
-  color: #71f4fa;
-  font-size: 32px;
-  transition: transform 0.3s ease-out, opacity 0.3s,
-    -webkit-transform 0.3s ease-out;
-  position: absolute;
-  right: 0.5%;
-  padding: 4%;
-  cursor: pointer;
-  pointer-events: visible;
-}
-header .icon.move {
-  pointer-events: all;
-  opacity: 1;
-  cursor: pointer;
-  transform: translate3d(0%, 0, 0);
-}
-header .icon.click {
-  pointer-events: all;
-  opacity: 1 !important;
-  transform: translate3d(0%, 0, 0) !important;
-}
+
 /* ## Media Queries ## */
 @media (min-width: 768px) {
-  header {
-    flex-direction: row;
-    padding: 0 10%;
-  }
   header.click {
     background-color: #fff;
   }

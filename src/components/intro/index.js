@@ -2,7 +2,11 @@ import React, { useState } from "react"
 import "./styles.css"
 import { graphql, useStaticQuery } from "gatsby"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { FaRocket } from "react-icons/fa"
+
+import Icon from "../../svgs/rocket.svg"
 
 import { SocialProfileJsonLd } from "gatsby-plugin-next-seo"
 
@@ -21,7 +25,7 @@ export default function Intro() {
                 imgUrl {
                   childImageSharp {
                     fixed(height: 270, width: 140) {
-                      ...GatsbyImageSharpFixed
+                      ...GatsbyImageSharpFixed_tracedSVG
                     }
                   }
                 }
@@ -32,7 +36,7 @@ export default function Intro() {
       }
     `
   )
-  const img = data.allMdx.edges[0].node.frontmatter.imgUrl.childImageSharp.fixed
+  // const img = data.allMdx.edges[0].node.frontmatter.imgUrl.childImageSharp.fixed
 
   const clickStyle = movClick ? "click" : ""
 
@@ -57,12 +61,8 @@ export default function Intro() {
       />
       <div className="container intro">
         <div className="about">
-          <h2>Impulse</h2>
-          <p>Um salto no seu negócio</p>
-          <h1>
-            Sites e Landing Pages com alta performance melhorando a conversão
-            dos seus clientes.
-          </h1>
+          <h1>Impulse</h1>
+          <h2>Um salto no seu negócio</h2>
           <button
             onClick={e => {
               // To stop the page reloading
@@ -83,10 +83,13 @@ export default function Intro() {
           >
             Entre em contato
           </button>
+          <AnchorLink className={`rocket`} to="/" title="home">
+            <FaRocket />
+          </AnchorLink>
         </div>
-        <div className={`image ${clickStyle}`}>
-          <Img fixed={img} alt="A rocket" />
-        </div>
+        {/* <div className={`image ${clickStyle}`}>
+          <Icon />
+        </div> */}
       </div>
     </>
   )

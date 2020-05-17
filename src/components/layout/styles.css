@@ -1,67 +1,36 @@
 @font-face {
-  font-family: "Rubik-Bold";
-  src: url("../../fonts/Rubik-Bold.ttf");
+  font-family: "Inconsolata";
+  src: url("../../fonts/Inconsolata.ttf");
 }
-html {
-  font-size: 12px;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.layout {
-  background-color: #fff;
-  flex: 1;
-  font-family: "Rubik-Regular", sans-serif;
-}
-.layout h1 {
-  font-size: 5.5rem;
-  font-weight: lighter;
-  letter-spacing: -1.5px;
-}
-.layout h2 {
-  font-size: 3rem;
-  font-weight: lighter;
-  letter-spacing: -0.5px;
-}
-
-.layout h3 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-.layout h4 {
-  font-size: 1.6rem;
-  font-weight: normal;
-  letter-spacing: 0.25px;
-}
-
-.layout p {
-  font-size: 1rem;
-  font-weight: normal;
+body,
+input,
+button,
+a {
+  font-size: 14px;
+  font-family: "Inconsolata", monospace;
   letter-spacing: 0.5px;
+  color: #3c3c3c;
 }
-
-.layout a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  letter-spacing: 0.15px;
-}
-.layout .container {
-  padding: 15vh 5vw 0;
-  background-color: #303f49;
-}
-@media (min-width: 768px) {
-  html {
+@media (min-width: 760px) {
+  body,
+  input,
+  button,
+  a {
     font-size: 14px;
   }
-  .layout .container {
-    padding: 50px 10%;
-  }
 }
-@media (min-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
+.container {
+  position: relative;
 }
-@media (min-width: 1280px) {
-  html {
-    font-size: 18px;
-  }
+button {
+  cursor: pointer;
 }
