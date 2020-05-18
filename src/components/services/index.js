@@ -1,43 +1,206 @@
 import React from "react"
-import "./styles.css"
-import { IoIosPeople } from "react-icons/io"
-import { MdDevices } from "react-icons/md"
-
-export default function Services() {
+import { Container, Itens, Item, Description } from "./styles"
+import Site from "../../assets/site.svg"
+import BannerBlog from "../bannerBlog"
+const Services = () => {
   return (
-    <div id="services" className="container services">
-      <h4>
-        Diminuimos consideravelmente a taxa de rejeição e aumentamos a conversão
-        e retenção dos usuários.
-      </h4>
-      <div className="services-section">
-        <div className="service">
-          <div className="icon">
-            <IoIosPeople />
-          </div>
-          <div className="service-about">
-            <h4>Criação e Otimização</h4>
-            <p>
-              Desenvolvimento de páginas utilizando a arquitetura JAMSTACK,
-              conseguimos trazer uma melhor performance, escalabilidade, mais
-              segurança e alta produtividade para o desenvolvedor.
-            </p>
-          </div>
-        </div>
+    <>
+      <Container className="container">
+        <Description>
+          <h3
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
+            Em que podemos ajuda-lo ?
+          </h3>
+        </Description>
+        <Itens>
+          <Item>
+            <h4
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Front-End
+            </h4>
+            <Site
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            />
 
-        <div className="service">
-          <div className="icon">
-            <MdDevices />
-          </div>
-          <div className="service-about">
-            <h4>Integração e Automatização</h4>
-            <p>
-              Completa integração com plataformas de vendas online, redes
-              sociais, ferramentas de marketing e sistemas de métricas.
+            <p
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Nossos desenvolvedores Front-End criarão a parte visual do seu
+              aplicativo ou site usando as melhores e mais recentes tecnologias
+              disponíveis no mercado, como React.js, Angular, Webpack e SASS.
+              Também garantiremos que o front-end corresponda completamente ao
+              seu design e especificação e também funcione perfeitamente em
+              todos os tamanhos e dispositivos de tela.
             </p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Item>
+          <Item>
+            <h4
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Front-End
+            </h4>
+            <Site
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            />
+
+            <p
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Nossos desenvolvedores Front-End criarão a parte visual do seu
+              aplicativo ou site usando as melhores e mais recentes tecnologias
+              disponíveis no mercado, como React.js, Angular, Webpack e SASS.
+              Também garantiremos que o front-end corresponda completamente ao
+              seu design e especificação e também funcione perfeitamente em
+              todos os tamanhos e dispositivos de tela.
+            </p>
+          </Item>
+          <Item>
+            <h4
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Front-End
+            </h4>
+            <Site
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            />
+
+            <p
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Nossos desenvolvedores Front-End criarão a parte visual do seu
+              aplicativo ou site usando as melhores e mais recentes tecnologias
+              disponíveis no mercado, como React.js, Angular, Webpack e SASS.
+              Também garantiremos que o front-end corresponda completamente ao
+              seu design e especificação e também funcione perfeitamente em
+              todos os tamanhos e dispositivos de tela.
+            </p>
+          </Item>
+          <Item>
+            <h4
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Front-End
+            </h4>
+            <Site
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            />
+
+            <p
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Nossos desenvolvedores Front-End criarão a parte visual do seu
+              aplicativo ou site usando as melhores e mais recentes tecnologias
+              disponíveis no mercado, como React.js, Angular, Webpack e SASS.
+              Também garantiremos que o front-end corresponda completamente ao
+              seu design e especificação e também funcione perfeitamente em
+              todos os tamanhos e dispositivos de tela.
+            </p>
+          </Item>
+          <Item>
+            <h4
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Front-End
+            </h4>
+            <Site
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            />
+
+            <p
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Nossos desenvolvedores Front-End criarão a parte visual do seu
+              aplicativo ou site usando as melhores e mais recentes tecnologias
+              disponíveis no mercado, como React.js, Angular, Webpack e SASS.
+              Também garantiremos que o front-end corresponda completamente ao
+              seu design e especificação e também funcione perfeitamente em
+              todos os tamanhos e dispositivos de tela.
+            </p>
+          </Item>
+          <Item>
+            <h4
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Front-End
+            </h4>
+            <Site
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            />
+
+            <p
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Nossos desenvolvedores Front-End criarão a parte visual do seu
+              aplicativo ou site usando as melhores e mais recentes tecnologias
+              disponíveis no mercado, como React.js, Angular, Webpack e SASS.
+              Também garantiremos que o front-end corresponda completamente ao
+              seu design e especificação e também funcione perfeitamente em
+              todos os tamanhos e dispositivos de tela.
+            </p>
+          </Item>
+        </Itens>
+      </Container>
+      <BannerBlog />
+    </>
   )
 }
+export default Services

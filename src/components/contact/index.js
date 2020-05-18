@@ -4,7 +4,6 @@ import { Link, useStaticQuery } from "gatsby"
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import "./styles.css"
-import Banner from "../banner"
 import Img from "gatsby-image"
 import { FiPhoneCall } from "react-icons/fi"
 import { IoMdPaperPlane } from "react-icons/io"
@@ -13,7 +12,7 @@ import BackgroundImage from "gatsby-background-image"
 export default function Contact() {
   const data = useStaticQuery(graphql`
     query logoQuery {
-      desktop: file(relativePath: { eq: "impulse.png" }) {
+      desktop: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 200) {
             ...GatsbyImageSharpFluid_withWebp
@@ -34,10 +33,15 @@ export default function Contact() {
 
   return (
     <>
-      <Banner />
       <div id="#contact" className="container contact">
         <div className="contact-section">
-          <div className="contact-info">
+          <div
+            className="contact-info"
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          >
             <Img fluid={logo} alt="logo Impulse" />
             <h4>Vamos Conversar</h4>
             <div>

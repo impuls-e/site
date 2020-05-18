@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import "./styles.css"
-import { Link, useStaticQuery } from "gatsby"
-import useDocumentScrollThrottled from "../useDocumentScrollThrottled/"
-import { FaRocket } from "react-icons/fa"
+import { useStaticQuery } from "gatsby"
+import Rocket from "../../assets/rocket-icon.svg"
+
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import BackgroundImage from "gatsby-background-image"
 
@@ -58,7 +58,7 @@ export default function Header() {
           <div></div>
         </button>
         <AnchorLink className={`logo ${moveStyle} `} to="/" title="home">
-          <FaRocket />
+          <Rocket />
         </AnchorLink>
 
         <ul className={`menu ${clickStyle}  ${moveStyle} `}>

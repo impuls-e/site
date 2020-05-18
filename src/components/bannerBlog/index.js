@@ -1,14 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import { Container, Button } from "./styles"
-const Banner = () => {
+const BannerBlog = () => {
   return (
     <Container className="container">
-      <h4>Vamos fechar um projeto?</h4>
-      <Link>Entre em contato</Link>
+      <h4>Dicas, Insights e tutoriais no nosso blog!</h4>
+      <Link to="#">Acessar o blog</Link>
     </Container>
   )
 }
 
-export default Banner
+export default BannerBlog

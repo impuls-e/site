@@ -51,7 +51,7 @@
   margin-left: 2vw;
 }
 .contact .contact-section .contact-info div a svg {
-  margin-right: 1vw;
+  margin-right: 0.5vw;
 }
 .contact .contact-section .contact-info button {
   color: var(--primary);

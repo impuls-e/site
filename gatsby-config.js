@@ -13,7 +13,7 @@ module.exports = {
       "Conceitos de design com inovação digital para criar sites e landing pages fáceis de usar e que trazem resultados.",
     url: "https://impulse.works",
     siteUrl: "https://impulse.works", // No trailing slash allowed!
-    image: `${__dirname}/src/images/impulse.png`, // Path to your image you placed in the 'static' folder
+    image: `${__dirname}/src/images/logo.png`, // Path to your image you placed in the 'static' folder
     twitterUsername: "@impuls-e",
   },
   plugins: [
@@ -48,7 +48,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "standalone",
-        icon: "src/images/favicon.png",
+        icon: "src/assets/rocket-icon.svg",
       },
     },
     {
@@ -79,14 +79,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: `${__dirname}/src/svgs`, // See below to configure properly
-        },
-      },
-    },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: "gatsby-plugin-extract-schema",
@@ -109,6 +101,14 @@ module.exports = {
         rootMargin: "0% 50%", // Corresponds to root's bounding box margin
         enterEventName: "sal:in", // Enter event name
         exitEventName: "sal:out", // Exit event name
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
       },
     },
   ],

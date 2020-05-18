@@ -39,6 +39,7 @@
   text-align: center;
   font-size: 1.2rem;
   color: var(--gray);
+  letter-spacing: -0.5px;
 
   margin-bottom: 4vh;
 }
