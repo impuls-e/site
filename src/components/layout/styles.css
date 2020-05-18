@@ -2,7 +2,19 @@
   font-family: "Inconsolata";
   src: url("../../fonts/Inconsolata.ttf");
 }
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400,600,900&display=swap");
+:root {
+  --secondary: #01a6baeb;
+  --primary: #7557c7c7;
+  --transparency: #000000bf;
+  --black: #000;
+  --white: #fff;
+  --gray: #707072;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,21 +27,22 @@ body,
 input,
 button,
 a {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Inconsolata", monospace;
   letter-spacing: 0.5px;
-  color: #3c3c3c;
+  color: var(--gray);
+  letter-spacing: -1px;
 }
 @media (min-width: 760px) {
   body,
   input,
   button,
   a {
-    font-size: 14px;
   }
 }
 .container {
   position: relative;
+  margin-left: 7vw;
 }
 button {
   cursor: pointer;

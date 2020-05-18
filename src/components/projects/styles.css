@@ -1,6 +1,31 @@
 .projetos {
-  background: #fff;
   display: flex;
   flex-direction: column;
-  background-color: #fff !important;
+  align-items: center;
+  background-image: radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    var(--white) 0,
+    var(--white)
+  );
+  background-size: 28px 28px;
+}
+.projetos h3 {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 6vh 0 20vh;
+  letter-spacing: -1px;
+}
+.projetos h3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 90px;
+  height: 4px;
+  bottom: -20px;
+  margin: auto;
+  background: var(--primary);
 }

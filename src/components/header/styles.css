@@ -3,6 +3,7 @@
   height: 100vh;
   position: fixed !important;
   animation: zoomInOut 10s infinite;
+  z-index: -1;
 }
 @keyframes zoomInOut {
   0% {
@@ -25,7 +26,7 @@ header {
   height: 100vh;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 0 9px 0 rgba(44, 43, 57, 0.16);
 
-  background-color: #fff;
+  background-color: var(--white);
   z-index: 2;
 }
 header .hamburguermenu {
@@ -42,13 +43,13 @@ header .hamburguermenu {
 }
 header .hamburguermenu div {
   width: 40px;
-  border: 2px solid #707072;
+  border: 2px solid var(--gray);
   border-radius: 3px;
   transition: all 0.2s ease-in-out;
   transform: rotate(0);
 }
 header .hamburguermenu:hover div {
-  border: 2px solid #7557c7c7 !important;
+  border: 2px solid var(--primary) !important;
 }
 header .hamburguermenu div:nth-child(2) {
   width: 30px;
@@ -57,7 +58,7 @@ header .hamburguermenu div:nth-child(2) {
 }
 header .hamburguermenu.click div:nth-child(1) {
   transform: rotate(45deg) translate(9px, 8px);
-  border: 2px solid #707072;
+  border: 2px solid var(--gray);
 }
 header .hamburguermenu.click div:nth-child(2) {
   opacity: 0;
@@ -65,17 +66,17 @@ header .hamburguermenu.click div:nth-child(2) {
 }
 header .hamburguermenu.click div:nth-child(3) {
   transform: rotate(-45deg) translate(10px, -10px);
-  border: 2px solid #707072;
+  border: 2px solid var(--gray);
 }
 
 header .logo {
   margin-bottom: 4vh;
   font-size: 32px;
-  color: #707072;
+  color: var(--gray);
   transition: all 0.2s ease-in-out;
 }
 header .logo:hover {
-  color: #7557c7c7;
+  color: var(--primary);
 }
 header ul {
   visibility: hidden;
@@ -83,7 +84,7 @@ header ul {
   display: flex;
   position: absolute;
   flex-direction: column;
-  background: #fff;
+  background: var(--white);
   padding: 18vh 1vw;
   margin-left: 4.5vw;
   height: 100vh;
@@ -106,7 +107,7 @@ header ul li {
 }
 header li a {
   position: relative;
-  color: #707072;
+  color: var(--gray);
   font-size: 1.5rem;
   outline: none;
   display: flex;
@@ -116,7 +117,7 @@ header li a {
   opacity: 0;
 }
 header li:hover a {
-  color: #7557c7c7;
+  color: var(--primary);
 }
 header ul li:nth-child(1) a {
   transition: color 0.2s ease-in, visibility 0.4s ease-in-out,
@@ -143,11 +144,11 @@ header li a:after {
   left: 0;
   width: 55%;
   height: 2px;
-  background-color: #707072;
+  background-color: var(--gray);
   transition: all 0.4s ease-in-out;
 }
 header li:hover a:after {
-  background-color: #7557c7c7;
+  background-color: var(--primary);
 }
 
 /* ## Media Queries ## */

@@ -4,18 +4,12 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(to right, #7557c7c7, #000000bf 72.71%);
+  background: linear-gradient(
+    217deg,
+    var(--primary),
+    var(--transparency) 72.71%
+  );
 }
-/* #7557c7c7, #01a6baeb */
-/* .intro:before {
-  background-image: url("https://delinx.digital/static/background-01-tablet-desktop-36ebbe46e31d55b0ff7292db26176c86.jpg");
-  width: 100vw;
-  height: 100vh;
-  content: "";
-  position: fixed;
-  top: 0;
-  z-index: 0;
-} */
 .intro .about {
   display: flex;
   flex-direction: column;
@@ -82,27 +76,27 @@
 }
 
 .intro h1 {
-  color: #fff;
+  color: var(--white);
   font-size: 6rem;
   font-weight: 900;
   margin-bottom: 3vh;
   animation: title 8s infinite;
 }
 .intro h2 {
-  color: #fff;
+  color: var(--white);
   margin-bottom: 5vh;
 
   font-weight: 400;
   font-size: 2rem;
 }
 .intro button {
-  color: #fff;
+  color: var(--white);
   width: 240px;
   min-width: 216px;
   border-radius: 25px;
   background-color: transparent;
   font-size: 1rem;
-  border: 1px solid #707072;
+  border: 1px solid var(--gray);
   height: 50px;
   font-weight: 400;
   margin-top: 25px;
@@ -114,7 +108,7 @@
   transition: all 0.3s ease-in;
 }
 .intro button:hover {
-  border-color: #fff;
+  border-color: var(--white);
   opacity: 0.8;
 }
 @media (min-width: 768px) {

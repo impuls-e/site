@@ -48,7 +48,6 @@ export default function Header() {
         className={"intro-background"}
         fluid={imageData}
       />
-      <BackgroundImage className="intro-background" />
       <header className={`header`}>
         <button
           onClick={handleClick}
