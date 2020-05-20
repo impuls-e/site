@@ -11,7 +11,7 @@ export const Container = styled.section`
   }
 `
 export const Description = styled.div`
-  padding: 10vh 20vw 8vh;
+  padding: 10vh 4vw 8vh;
   background-image: radial-gradient(
     circle,
     #d7d7d7,
@@ -21,6 +21,9 @@ export const Description = styled.div`
   );
   background-size: 28px 28px;
 
+  @media (min-width: 765px) {
+    padding: 10vh 20vw 8vh;
+  }
   h4 {
     font-size: 1.4rem;
     font-weight: 400;
@@ -53,16 +56,21 @@ export const Itens = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 2vh 8vw 4vh;
+  padding: 2vh 2vw 2vh;
+  @media (min-width: 765px) {
+    padding: 2vh 8vw 4vh;
+  }
 `
 export const Item = styled.div`
-  padding: 2vh 5vw 10vh;
+  padding: 2vh 4vw 2vh;
   display: flex;
   align-self: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 50%;
-
+  @media (min-width: 765px) {
+    padding: 2vh 4vw 6vh;
+  }
   svg {
     align-self: center;
     max-width: 100px;

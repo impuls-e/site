@@ -48,16 +48,78 @@ export const Itens = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 2vh 8vw 4vh;
+  padding: 2vh 4vw 4vh;
+  @media (min-width: 765px) {
+    padding: 2vh 8vw 4vh;
+  }
 `
 export const Item = styled.div`
-  padding: 2vh 5vw 10vh;
+  padding: 2vh 2vw 10vh;
   display: flex;
   align-self: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 33%;
+  width: 50%;
+  @media (min-width: 765px) {
+    width: 33%;
+  }
 
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+    justify-content: center;
+    li {
+      margin: 1vw;
+      position: relative;
+
+      &:hover {
+        opacity: 1;
+        visibility: visible;
+
+        span {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      div {
+        width: 24px;
+        height: 24px;
+        @media (min-width: 765px) {
+        }
+      }
+
+      span {
+        width: max-content;
+        background: var(--gray);
+        padding: 8px;
+        border-radius: 4px;
+        color: var(--white);
+        font-size: 0.8rem;
+        font-weight: 400;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+        position: absolute;
+        bottom: calc(100% + 12px);
+        left: 50%;
+        transform: translateX(-50%);
+        &:before {
+          content: "";
+          border-style: solid;
+          border-color: var(--gray) transparent;
+          border-width: 6px 6px 0 6px;
+          top: 100%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          transition: all 0.2s ease-in-out;
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
   svg {
     align-self: center;
     max-width: 100px;

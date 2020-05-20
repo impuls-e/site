@@ -5,13 +5,22 @@ export const Container = styled.div`
   padding: 0 4vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #7557c7;
+  justify-content: space-around;
+  flex-direction: column;
 
+  background-color: #7557c7;
+  @media (min-width: 765px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
   h4 {
     font-size: 1.8rem;
     letter-spacing: -1px;
     color: var(--white);
+    text-align: center;
+    @media (min-width: 765px) {
+      text-align: left;
+    }
   }
   a {
     display: flex;

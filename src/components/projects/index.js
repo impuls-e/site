@@ -1,6 +1,6 @@
 import React from "react"
 import "./styles.css"
-import ProjetosSlick from "../projects-slick"
+import ProjetosSlick from "../projectsSlick"
 import Banner from "../banner"
 
 export default function Projetos() {

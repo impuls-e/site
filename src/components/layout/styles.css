@@ -23,27 +23,38 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  font-size: 12px;
+}
+@media (min-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
 body,
 input,
 button,
 a {
-  font-size: 16px;
+  font-size: 13px;
   font-family: "Inconsolata", monospace;
   letter-spacing: 0.5px;
   color: var(--gray);
   letter-spacing: -1px;
 }
-@media (min-width: 760px) {
-  body,
-  input,
-  button,
-  a {
-  }
-}
+
 .container {
   position: relative;
-  margin-left: 7vw;
 }
 button {
   cursor: pointer;
+}
+@media (min-width: 765px) {
+  .container {
+    margin-left: 7vw;
+  }
 }

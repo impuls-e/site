@@ -19,11 +19,10 @@
 header {
   position: fixed;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 7vw;
-  height: 100vh;
+  width: 100vw;
+  height: 10vh;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.14), 0 0 9px 0 rgba(44, 43, 57, 0.16);
 
   background-color: var(--white);
@@ -39,7 +38,7 @@ header .hamburguermenu {
   justify-content: space-evenly;
   width: 48px;
   height: 48px;
-  margin-top: 4vh;
+  margin-left: 4vw;
 }
 header .hamburguermenu div {
   width: 40px;
@@ -70,25 +69,26 @@ header .hamburguermenu.click div:nth-child(3) {
 }
 
 header .logo {
-  margin-bottom: 4vh;
+  margin-right: 4vw;
   font-size: 32px;
   color: var(--gray);
   transition: all 0.2s ease-in-out;
+  display: flex;
 }
 header .logo:hover {
   color: var(--primary);
 }
+
 header ul {
   visibility: hidden;
   opacity: 0;
   display: flex;
   position: absolute;
-  flex-direction: column;
   background: var(--white);
-  padding: 18vh 1vw;
-  margin-left: 4.5vw;
-  height: 100vh;
-  width: 12vw;
+  align-items: flex-end;
+  padding: 0 4vw;
+  height: 25vh;
+  width: 100vw;
   transition: opacity 0.2s ease-out, visibility 0.2s ease-out,
     box-shadow 2s ease-in-out;
   z-index: -2;
@@ -100,9 +100,9 @@ header ul.click {
 header ul li {
   display: flex;
   align-items: center;
-  margin-bottom: 4vh;
   height: 50px;
-  padding: 1vw;
+  margin: 1vh 0;
+  padding: 3vw;
   border-radius: 0 5px 5px 0;
 }
 header li a {
@@ -153,6 +153,32 @@ header li:hover a:after {
 
 /* ## Media Queries ## */
 @media (min-width: 768px) {
+  .header {
+    flex-direction: column;
+    width: 8vw;
+    height: 100vh;
+  }
+  header .hamburguermenu {
+    margin-top: 4vh;
+    margin-left: 0;
+  }
+  header .logo {
+    margin-right: 0;
+    margin-bottom: 4vh;
+  }
+  header ul {
+    flex-direction: column;
+    padding: 18vh 1vw;
+    margin-left: 4.5vw;
+    align-items: flex-start;
+    width: 16vw;
+    height: 100vh;
+  }
+  header ul li {
+    margin-left: 4vh;
+    height: 50px;
+    padding: 0;
+  }
 }
 @media (min-width: 1024px) {
 }
