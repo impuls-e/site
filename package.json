@@ -16,8 +16,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.5.7",
     "@mdx-js/react": "^1.5.7",
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.7",
-    "gatsby-background-image": "^0.10.2",
+    "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.2.41",
     "gatsby-plugin-advanced-sitemap": "^1.5.2",
     "gatsby-plugin-anchor-links": "^1.1.0",
@@ -29,9 +30,12 @@
     "gatsby-plugin-next-seo": "^1.4.0",
     "gatsby-plugin-offline": "^3.0.35",
     "gatsby-plugin-react-helmet": "^3.1.23",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-scroll-reveal": "^0.0.6",
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-sitemap": "^2.2.27",
+    "gatsby-plugin-styled-components": "^3.3.1",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-sharp": "^2.3.14",
     "minireset.css": "^0.0.6",
@@ -44,6 +48,7 @@
     "react-slick": "^0.25.2",
     "react-tabs": "^3.1.0",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^5.1.0",
     "use-dencrypt-effect": "^1.0.2"
   },
   "devDependencies": {

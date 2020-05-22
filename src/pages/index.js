@@ -5,8 +5,9 @@ import Layout from "../components/layout"
 import Intro from "../components/intro"
 import Projetos from "../components/projects"
 import Services from "../components/services"
-import Contact from "../components/contact"
+import We from "../components/we"
 
+import Contact from "../components/contact"
 export default () => {
   return (
     <>
@@ -14,6 +15,7 @@ export default () => {
         <Seo />
         <Header />
         <Intro />
+        <We />
         <Projetos />
         <Services />
         <Contact />

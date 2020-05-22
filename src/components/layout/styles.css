@@ -1,58 +1,34 @@
 @font-face {
-  font-family: "Rubik-Bold";
-  src: url("../../fonts/Rubik-Bold.ttf");
+  font-family: "Inconsolata";
+  src: url("../../fonts/Inconsolata.ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400,600,900&display=swap");
+:root {
+  --secondary: #01a6baeb;
+  --primary: #7557c7c7;
+  --transparency: #000000bf;
+  --black: #000;
+  --white: #fff;
+  --gray: #707072;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 html {
   font-size: 12px;
 }
-
-.layout {
-  background-color: #fff;
-  flex: 1;
-  font-family: "Rubik-Regular", sans-serif;
-}
-.layout h1 {
-  font-size: 5.5rem;
-  font-weight: lighter;
-  letter-spacing: -1.5px;
-}
-.layout h2 {
-  font-size: 3rem;
-  font-weight: lighter;
-  letter-spacing: -0.5px;
-}
-
-.layout h3 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-}
-.layout h4 {
-  font-size: 1.6rem;
-  font-weight: normal;
-  letter-spacing: 0.25px;
-}
-
-.layout p {
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: 0.5px;
-}
-
-.layout a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  letter-spacing: 0.15px;
-}
-.layout .container {
-  padding: 15vh 5vw 0;
-  background-color: #303f49;
-}
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   html {
     font-size: 14px;
-  }
-  .layout .container {
-    padding: 50px 10%;
   }
 }
 @media (min-width: 1024px) {
@@ -60,8 +36,25 @@ html {
     font-size: 16px;
   }
 }
-@media (min-width: 1280px) {
-  html {
-    font-size: 18px;
+body,
+input,
+button,
+a {
+  font-size: 13px;
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 0.5px;
+  color: var(--gray);
+  letter-spacing: -1px;
+}
+
+.container {
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
+@media (min-width: 765px) {
+  .container {
+    margin-left: 7vw;
   }
 }

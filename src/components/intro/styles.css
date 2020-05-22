@@ -1,19 +1,33 @@
 .intro {
   display: flex;
-  height: 100vh;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  flex: 1;
-  flex-direction: column-reverse;
-  background-color: #303f49;
+  height: 100vh;
+  background: linear-gradient(
+    217deg,
+    var(--primary),
+    var(--transparency) 72.71%
+  );
 }
-
 .intro .about {
   display: flex;
   flex-direction: column;
+  align-items: center;
   animation: 600ms ease 600ms 1 normal forwards running animation;
   opacity: 0;
 }
+.intro .about a {
+  position: absolute;
+  margin-top: 50vh;
+  font-size: 48px;
+  color: #fff;
+  transform: rotate(-45deg);
+  -moz-transform: translate(0, 150px) rotate(-45deg);
+  animation: mymove 2s infinite;
+}
 .intro .image {
+  height: 25%;
   width: 100%;
   transition: 1.7s transform ease-in;
   display: flex;
@@ -28,6 +42,29 @@
     opacity: 1;
   }
 }
+@keyframes mymove {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  33% {
+    transform: rotate3d(0, 1, 0.1, 15deg);
+  }
+  66% {
+    transform: rotate3d(0, 1, 0.1, -15deg);
+  }
+}
 .intro .image.click {
   transform: translate3d(0%, -200%, 0);
 }
@@ -38,63 +75,47 @@
   max-width: 356px;
 }
 
-.intro h2 {
-  color: #71f4fa;
-
-  font-size: 5.5rem;
-  font-weight: 700;
-  letter-spacing: -1.5px;
-}
-.intro p {
-  color: #fff;
-
-  font-style: italic;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
 .intro h1 {
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  color: var(--white);
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 3vh;
+  animation: title 8s infinite;
+}
+.intro h2 {
+  color: var(--white);
+  margin-bottom: 5vh;
+
+  font-weight: 400;
+  font-size: 2rem;
 }
 .intro button {
+  color: var(--white);
   width: 240px;
   min-width: 216px;
   border-radius: 25px;
-  background-color: white;
+  background-color: transparent;
   font-size: 1rem;
-  border: 1px solid #9a9a9a;
+  border: 1px solid var(--gray);
   height: 50px;
   font-weight: 400;
   margin-top: 25px;
   padding: 0.6em 1em;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s,
-    opacity 0.3s, color 0.3s;
   outline: none;
   align-self: center;
+  transition: all 0.3s ease-in;
 }
 .intro button:hover {
-  color: #fff;
-  border-color: #707072;
-  background-color: #707072;
+  border-color: var(--white);
+  opacity: 0.8;
 }
 @media (min-width: 768px) {
-  .intro {
-    flex-direction: row;
-    align-items: center;
-    height: 80vh;
-  }
   .intro .about {
     width: 75%;
   }
   .intro .image {
     width: 25%;
-  }
-  .intro button {
-    align-self: flex-start;
   }
 }
