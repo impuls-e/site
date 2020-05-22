@@ -58,6 +58,32 @@ const We = () => {
             </p>
           </Item>
           <Item>
+            <App
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            />
+            <h4
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Aplicativos
+            </h4>
+            <p
+              data-sal="slide-up"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+              data-sal-duration="1000"
+            >
+              Desenvolvemos a sua ideia! Transformamos desejos em realidades,
+              seja um projeto para sua startup ou para um negócio consolidado.
+              Desenvolvimento de aplicativos é aqui na Impulse!
+            </p>
+          </Item>
+          <Item>
             <Lp
               data-sal="slide-up"
               data-sal-delay="200"
@@ -115,32 +141,6 @@ const We = () => {
               a maioria dos seus negócios de comércio eletrônico, para que você
               se concentre no que é importante. Temos experiência com Shopify,
               WooCommerce, OpenCart, Magento e PrestaShop.
-            </p>
-          </Item>
-          <Item>
-            <App
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-easing="ease"
-              data-sal-duration="1000"
-            />
-            <h4
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-easing="ease"
-              data-sal-duration="1000"
-            >
-              Aplicativos
-            </h4>
-            <p
-              data-sal="slide-up"
-              data-sal-delay="200"
-              data-sal-easing="ease"
-              data-sal-duration="1000"
-            >
-              Desenvolvemos a sua ideia! Transformamos desejos em realidades,
-              seja um projeto para sua startup ou para um negócio consolidado.
-              Desenvolvimento de aplicativos é aqui na Impulse!
             </p>
           </Item>
         </Itens>
