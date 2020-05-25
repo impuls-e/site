@@ -11,18 +11,16 @@ export default function introProjects({
   return (
     <div className="intro-projects">
       <section>
-        <h4>Cliente</h4>
         <h1>{title}</h1>
-        <h4>Sobre o Projeto</h4>
         <p>{description}</p>
+        <a className="site" href={liveUrl}>
+          Veja o site <FaExternalLinkAlt />
+        </a>
       </section>
       <aside>
         <h4>Serviços</h4>
         <p>{services}</p>
         <h4>Website</h4>
-        <a className="site" href={liveUrl}>
-          Site {title} <FaExternalLinkAlt />
-        </a>
       </aside>
     </div>
   )

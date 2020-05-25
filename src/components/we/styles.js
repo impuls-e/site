@@ -22,7 +22,7 @@ export const Description = styled.div`
   background-size: 28px 28px;
 
   @media (min-width: 765px) {
-    padding: 10vh 20vw 8vh;
+    padding: 10vh 18vw 8vh;
   }
   h4 {
     font-size: 1.4rem;

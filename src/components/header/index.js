@@ -81,7 +81,7 @@ export default function Header() {
             </AnchorLink>
           </li>
           <li>
-            <AnchorLink onClick={handleClick} to="#contact" title="Contact us">
+            <AnchorLink onClick={handleClick} to="/contacts" title="Contact us">
               Contato
             </AnchorLink>
           </li>

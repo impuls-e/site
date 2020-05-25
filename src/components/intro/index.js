@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 import "./styles.css"
-import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { FaRocket } from "react-icons/fa"
 

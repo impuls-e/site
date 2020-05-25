@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Link, useStaticQuery } from "gatsby"
+import { useStaticQuery } from "gatsby"
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import "./styles.css"
@@ -8,6 +8,7 @@ import Img from "gatsby-image"
 import { FiPhoneCall } from "react-icons/fi"
 import { IoMdPaperPlane } from "react-icons/io"
 import BackgroundImage from "gatsby-background-image"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 export default function Contact() {
   const data = useStaticQuery(graphql`
@@ -72,16 +73,24 @@ export default function Contact() {
           </div>
           <ul>
             <li>
-              <Link href="">Home</Link>
+              <AnchorLink to="#" title="Home">
+                Home
+              </AnchorLink>
             </li>
             <li>
-              <Link href="">Projetos</Link>
+              <AnchorLink to="#projects" title="Projects">
+                Projetos
+              </AnchorLink>
             </li>
             <li>
-              <Link href="">Serviços</Link>
+              <AnchorLink to="#services" title="Contact us">
+                Serviços
+              </AnchorLink>
             </li>
             <li>
-              <Link href="">Contato</Link>
+              <AnchorLink to="/contacts" title="Contact us">
+                Contato
+              </AnchorLink>
             </li>
           </ul>
         </footer>

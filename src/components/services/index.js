@@ -1,6 +1,5 @@
 import React from "react"
 import { Container, Itens, Item, Description } from "./styles"
-import Site from "../../assets/site.svg"
 import BannerBlog from "../bannerBlog"
 import Img from "gatsby-image"
 
@@ -101,7 +100,7 @@ const Services = () => {
   console.log(frontend)
   return (
     <>
-      <Container className="container">
+      <Container id="services" className="container">
         <Description>
           <h3
             data-sal="slide-up"

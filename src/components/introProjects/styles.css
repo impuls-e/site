@@ -1,65 +1,77 @@
 .intro-projects {
   display: flex;
   flex-direction: column;
-  background-color: #303f49;
   height: 100vh;
   padding: 15vh 5vw 0;
   box-sizing: border-box;
-  justify-content: flex-start;
+  background-image: radial-gradient(
+    circle,
+    #d7d7d7,
+    #d7d7d7 1px,
+    var(--white) 0,
+    var(--white)
+  );
+  background-size: 28px 28px;
 }
 .intro-projects section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.intro-projects h1 {
+  font-size: 6rem;
+  text-align: center;
+  color: var(--gray);
+  margin-bottom: 4vh;
+}
+.intro-projects p {
+  line-height: 32px;
+  font-size: 1.4rem;
+  color: var(--gray);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+.intro-projects a {
+  color: #00000096;
+  width: 240px;
+  min-width: 216px;
+  border-radius: 25px;
+  background-color: white;
+  font-size: 1rem;
+  border: 1px solid #9a9a9a;
+  height: 50px;
+  font-weight: 400;
+  padding: 0.6em 1em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s, border 0.3s, background 0.3s, box-shadow 0.3s,
+    opacity 0.3s, color 0.3s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-projects a:hover {
+  color: #fff;
+  border-color: #707072;
+  background-color: #707072;
+}
+.intro-projects a svg {
+  margin-left: 1vw;
 }
 .intro-projects aside {
   display: flex;
   flex-direction: column;
 }
-.intro-projects h1 {
-  margin-left: 1%;
-  color: #fff;
-}
-.intro-projects h1:after {
-  content: "";
-  position: relative;
-  bottom: 0.5rem;
-  left: 7px;
-  width: 7rem;
-  height: 0.2rem;
-  background-color: #71f4fa;
-  display: flex;
-  border-radius: 4px;
-}
-.intro-projects h4 {
-  color: #fff;
-  font-weight: 700;
-  margin-top: 5vh;
-}
-.intro-projects p {
-  margin-left: 0.5%;
-  color: #fff;
-}
-.intro-projects a {
-  margin-left: 1%;
-  color: #fff;
-}
-.intro-projects aside .site {
-  display: flex;
-  flex-wrap: wrap;
-  color: #fff;
-  align-items: center;
-}
-.intro-projects aside .site svg {
-  margin-left: 1vw;
-}
 @media (min-width: 768px) {
   .intro-projects {
-    flex-direction: row;
-    padding: 15vh 10vw 0;
+    padding: 15vh 8vw 0;
+
+    margin-left: 8vw;
   }
   .intro-projects section {
-    width: 70%;
-    padding-right: 5vw;
   }
   .intro-projects aside {
     width: 30%;
