@@ -17,9 +17,9 @@
   animation: 600ms ease 600ms 1 normal forwards running animation;
   opacity: 0;
 }
-.intro .about a {
+.intro .about .rocket {
   position: absolute;
-  margin-top: 50vh;
+  bottom: 0;
   font-size: 48px;
   color: #fff;
   transform: rotate(-45deg);
@@ -89,7 +89,7 @@
   font-weight: 400;
   font-size: 2rem;
 }
-.intro button {
+.intro .button {
   color: var(--white);
   width: 240px;
   min-width: 216px;
@@ -106,8 +106,11 @@
   outline: none;
   align-self: center;
   transition: all 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.intro button:hover {
+.intro .button:hover {
   border-color: var(--white);
   opacity: 0.8;
 }

@@ -121,13 +121,17 @@ header li:hover a {
 }
 header ul li:nth-child(1) a {
   transition: color 0.2s ease-in, visibility 0.4s ease-in-out,
-    transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 header ul li:nth-child(2) a {
   transition: color 0.2s ease-in, visibility 0.6s ease-in-out,
-    transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 header ul li:nth-child(3) a {
+  transition: color 0.2s ease-in, visibility 0.8s ease-in-out,
+    transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+header ul li:nth-child(4) a {
   transition: color 0.2s ease-in, visibility 0.8s ease-in-out,
     transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }

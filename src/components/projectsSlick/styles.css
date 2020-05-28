@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 6vh 4vw 15vh;
+  margin: 6vh 11vw 15vh;
 
   flex-direction: column;
 }
 
 .projetos .item .image {
-  width: 65%;
+  width: 100%;
 }
 .projetos .item .gatsby-image-wrapper {
   width: 100%;

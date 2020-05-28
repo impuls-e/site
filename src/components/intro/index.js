@@ -23,8 +23,18 @@ export default function Intro() {
         <div className="about">
           <h1>Impulse</h1>
           <h2>Um salto no seu negócio</h2>
-          <button>Entre em contato</button>
-          <AnchorLink className={`rocket`} to="/" title="home">
+          <AnchorLink
+            className="button"
+            to="/contato/#form"
+            title="go to contato"
+          >
+            Entre em contato
+          </AnchorLink>
+          <AnchorLink
+            className={`rocket`}
+            to="/contato/#form"
+            title="go to contato"
+          >
             <FaRocket />
           </AnchorLink>
         </div>

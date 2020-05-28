@@ -108,7 +108,7 @@ const Services = () => {
             data-sal-easing="ease"
             data-sal-duration="1000"
           >
-            Em que podemos ajuda-lo ?
+            Em que podemos ajudá-lo ?
           </h3>
         </Description>
         <Itens>
@@ -128,7 +128,7 @@ const Services = () => {
               data-sal-duration="1000"
             >
               {data.frontend.edges.map(img => (
-                <li>
+                <li key={img.node.childImageSharp.fluid.originalName}>
                   <Img
                     fluid={img.node.childImageSharp.fluid}
                     alt="An image apresentation from current project"
@@ -170,7 +170,7 @@ const Services = () => {
               data-sal-duration="1000"
             >
               {backend.map(img => (
-                <li>
+                <li key={img.node.childImageSharp.fluid.originalName}>
                   <Img
                     fluid={img.node.childImageSharp.fluid}
                     alt="An image apresentation from current project"
@@ -211,7 +211,7 @@ const Services = () => {
               data-sal-duration="1000"
             >
               {cms.map(img => (
-                <li>
+                <li key={img.node.childImageSharp.fluid.originalName}>
                   <Img
                     fluid={img.node.childImageSharp.fluid}
                     alt="An image apresentation from current project"
@@ -252,7 +252,7 @@ const Services = () => {
               data-sal-duration="1000"
             >
               {ecommerce.map(img => (
-                <li>
+                <li key={img.node.childImageSharp.fluid.originalName}>
                   <Img
                     fluid={img.node.childImageSharp.fluid}
                     alt="An image apresentation from current project"
@@ -295,7 +295,7 @@ const Services = () => {
               data-sal-duration="1000"
             >
               {design.map(img => (
-                <li>
+                <li key={img.node.childImageSharp.fluid.originalName}>
                   <Img
                     fluid={img.node.childImageSharp.fluid}
                     alt="An image apresentation from current project"
@@ -338,7 +338,7 @@ const Services = () => {
               data-sal-duration="1000"
             >
               {mobile.map(img => (
-                <li>
+                <li key={img.node.childImageSharp.fluid.originalName}>
                   <Img
                     fluid={img.node.childImageSharp.fluid}
                     alt="An image apresentation from current project"

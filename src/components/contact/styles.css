@@ -53,7 +53,7 @@
 .contact .contact-section .contact-info div a svg {
   margin-right: 0.5vw;
 }
-.contact .contact-section .contact-info button {
+.contact .contact-section .contact-info .button {
   color: var(--primary);
   width: 240px;
   min-width: 216px;
@@ -67,10 +67,13 @@
   cursor: pointer;
   text-decoration: none;
   outline: none;
+  display: flex;
   align-self: center;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease-in;
 }
-.contact .contact-section .contact-info button:hover {
+.contact .contact-section .contact-info .button:hover {
   border-color: var(--white);
   color: var(--white);
   background-color: var(--gray);

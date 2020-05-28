@@ -7,20 +7,21 @@ export default function introContacts() {
     <>
       <div className="intro-contacts">
         <section>
-          <div>
+          <div className="contacts-about">
             <h1>Vamos construir algo extraordinário juntos.</h1>
             <p>
               Você pode apenas nos dizer o que precisa e forneceremos uma
               solução. Muitas empresas líderes já confiaram em nós. Você pode
               ter certeza de que está em boas mãos. 😃
             </p>
-            <AnchorLink to="#form">Vamos conversar</AnchorLink>
+            <AnchorLink to="/contato/#form">Vamos conversar</AnchorLink>
           </div>
           <aside>
             <Undraw />
           </aside>
         </section>
         <form
+          id="form"
           name="contact"
           method="post"
           data-netlify="true"
@@ -42,31 +43,61 @@ export default function introContacts() {
           >
             Envie-nos uma mensagem.
           </h3>
-          <div>
+          <div className="row">
             <label>
-              Name
-              <input type="text" name="name" id="name" />
+              Endereço de e-mail (obrigatório)
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Coloque seu e-mail"
+                required
+              />
             </label>
             <label>
-              Email
-              <input type="email" name="email" id="email" />
+              Seu Nome (obrigatório)
+              <input
+                type="text"
+                name="name"
+                placeholder="Coloque seu nome"
+                id="name"
+                required
+              />
             </label>
           </div>
-          <div>
+          <div className="row">
             <label>
-              Subject
-              <input type="text" name="subject" id="subject" />
+              Tecnologias (opcional)
+              <input
+                type="techs"
+                name="techs"
+                id="techs"
+                placeholder="Digite aqui as tecnologias"
+              />
             </label>
             <label>
-              Subject
-              <input type="text" name="subject" id="subject" />
+              Telefone (opcional)
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Digite seu telefone"
+              />
             </label>
           </div>
-          <label>
-            Message
-            <textarea name="message" id="message" rows="5" />
-          </label>
-          <button type="submit">Send</button>
+          <div className="row">
+            <label>
+              Mensagem (obrigatório)
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Coloque aqui a sua necessidade"
+              />
+            </label>
+          </div>
+
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </>

@@ -63,9 +63,14 @@ export default function Header() {
 
         <ul className={`menu ${clickStyle}  ${moveStyle} `}>
           <li>
+            <AnchorLink onClick={handleClick} to="/" title="Our home">
+              Home
+            </AnchorLink>
+          </li>
+          <li>
             <AnchorLink
               onClick={handleClick}
-              to="#projects"
+              to="/#projects"
               title="Our projects"
             >
               Projetos
@@ -81,7 +86,7 @@ export default function Header() {
             </AnchorLink>
           </li>
           <li>
-            <AnchorLink onClick={handleClick} to="/contacts" title="Contact us">
+            <AnchorLink onClick={handleClick} to="/contato" title="Contact us">
               Contato
             </AnchorLink>
           </li>

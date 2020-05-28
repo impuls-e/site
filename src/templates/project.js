@@ -16,6 +16,7 @@ const ProjectTemplate = ({ pageContext }) => {
         description={project.description}
         liveUrl={project.liveUrl}
         services={project.services}
+        pagespeed={project.pagespeed.childImageSharp.fluid.src}
       />
       <Contact />
     </Layout>

@@ -46,16 +46,18 @@ export default function Contact() {
             <Img fluid={logo} alt="logo Impulse" />
             <h4>Vamos Conversar</h4>
             <div>
-              <a href="">
+              <a href="https://wa.me/5548999101220" target="_blank">
                 <FiPhoneCall />
-                impulseworks@gmail.com
-              </a>
-              <a href="">
-                <IoMdPaperPlane />
                 (48) 999-101-220
               </a>
+              <a href="mailto:impulseworks@gmail.com">
+                <IoMdPaperPlane />
+                impulseworks@gmail.com
+              </a>
             </div>
-            <button>Entre em contato</button>
+            <AnchorLink className="button" to="/contato" title="Contact us">
+              Entre em contato
+            </AnchorLink>
           </div>
           <BackgroundImage Tag="section" className={"map"} fluid={maps} />
         </div>
@@ -73,22 +75,22 @@ export default function Contact() {
           </div>
           <ul>
             <li>
-              <AnchorLink to="#" title="Home">
+              <AnchorLink to="/" title="Home">
                 Home
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink to="#projects" title="Projects">
+              <AnchorLink to="/#projects" title="Projects">
                 Projetos
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink to="#services" title="Contact us">
+              <AnchorLink to="/#services" title="Contact us">
                 Serviços
               </AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/contacts" title="Contact us">
+              <AnchorLink to="/contato" title="Contact us">
                 Contato
               </AnchorLink>
             </li>

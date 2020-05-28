@@ -25,6 +25,7 @@ export default function ProjetosSlick() {
                 }
               }
             }
+            id
           }
         }
       }
@@ -61,9 +62,9 @@ export default function ProjetosSlick() {
           >
             <h4>{project.node.frontmatter.title}</h4>
             <p>{project.node.frontmatter.description}</p>
-            <ul class="list-icons type-horizontal">
+            <ul className="list-icons type-horizontal">
               {project.node.frontmatter.services.split(", ").map(tech => (
-                <li class="">
+                <li key={tech}>
                   <img src={`/services/${tech}.png`} alt={tech} />
                   <span>{tech}</span>
                 </li>

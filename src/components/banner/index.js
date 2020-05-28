@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <Container className="container">
       <h4>Vamos fechar um projeto?</h4>
-      <Link>Entre em contato</Link>
+      <Link to="/contato">Entre em contato</Link>
     </Container>
   )
 }

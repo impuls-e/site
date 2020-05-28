@@ -5,7 +5,7 @@ const BannerBlog = () => {
   return (
     <Container className="container">
       <h4>Dicas, Insights e tutoriais no nosso blog!</h4>
-      <Link to="#">Acessar o blog</Link>
+      <Link to="/contato">Acessar o blog</Link>
     </Container>
   )
 }

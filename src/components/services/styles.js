@@ -23,6 +23,7 @@ export const Description = styled.div`
   background-size: 28px 28px;
 
   h3 {
+    margin-top: 2vh;
     text-align: center;
     position: relative;
     font-size: 2.5rem;
