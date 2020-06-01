@@ -104,10 +104,10 @@ const We = () => {
               data-sal-easing="ease"
               data-sal-duration="1000"
             >
-              Somos especialistas em desenvolvimento de Landing Page, criamos
+              Somos especialistas em desenvolvimento de Landing Page. Criamos
               páginas estratégicas para alavancar o potencial da sua empresa,
               produtos e serviços oferecidos. Nós desenvolvemos landing pages
-              para os mais diferentes ramos de atividade, e o ponto em comum em
+              para os mais diferentes ramos de atividade e o ponto em comum em
               todas as empresas que aderiram a utilização das landing pages foi
               o aumento na captação de leads e na conversão em venda real,
               aumentando a receita e visibilidade das campanhas.
@@ -134,11 +134,11 @@ const We = () => {
               data-sal-easing="ease"
               data-sal-duration="1000"
             >
-              A receita global de comércio eletrônico para 2018 é estimada em US
+              A receita global de comércio eletrônico em 2018 foi estimada em US
               $ 2,85 trilhões. Os especialistas prevêem que esse número quase
               dobrará até 2021, o que é uma curva de crescimento bastante
               acentuada. Podemos criar uma loja on-line e ajudá-lo a automatizar
-              a maioria dos seus negócios de comércio eletrônico, para que você
+              a maioria dos seus negócios de comércio eletrônico para que você
               se concentre no que é importante. Temos experiência com Shopify,
               WooCommerce, OpenCart, Magento e PrestaShop.
             </p>
