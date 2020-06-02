@@ -1,30 +1,19 @@
-<img src="./src/img/impulse.png" align="center"></img>
-<h1 align="center">Impuls-e</h1>
-<p align="center">Site institucional da empresa<strong> Impuls-e</strong>.</p>
+<h3 align="center">
+  Impulse Works
+</h3>
 
-## Descrição
-Um salto no seu negócio.
-Páginas rápidas e com excelente SEO para seu site crescer nas pesquisas do google.
+## Description
 
-## Solução
-[Site](https://geluxeletrica.com.br/) desenvolvido com o framework Gatsby.
-Segue abaixo algumas informações sobre o resultado.
+Impuls-e is a Digital Agency focused on helping our clients build their online digital presence.
 
-> Todas as informações são baseadas na tela **Mobile** e foram tiradas do site [PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) > - By Google
+## Solution
 
-- A nota da página foi de **83** pontos.
-- O tempo que o primeiro conteúdo é desenhado na tela foi de **1.3 s**.
-- O índice de velocidade foi de **1.3 s**.
-- O tempo que a página leva para ficar completamente interativa foi de **5.1 s**. 
+[Site](https://impuls-e.works/) developed with the Gatsby framework.
+Below some information about the result.
 
-Print
+> All information is based on the ** Mobile ** screen and was taken from the website[PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) > - By Google
 
-PageSpeedTest Impuls-e                                         |  
-:-----------------------------------------------------------:|
-<img src="./src/img/pagespeedinsights.png" align="center"/>   | 
-
-
-### LINKS
-
-[PageSpeedTest Impuls-e](https://developers.google.com/speed/pagespeed/insights/?url=impuls-e.works)
-
+- The page score was **83** points.
+- The time that the first content is drawn on the screen was **1.3 s**.
+- The speed index was **1.3 s**.
+- The time it takes the page to be completely interactive was **5.1 s**.
