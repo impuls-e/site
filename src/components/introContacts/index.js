@@ -11,8 +11,7 @@ export default function introContacts() {
             <h1>Vamos construir algo extraordinário juntos.</h1>
             <p>
               Você pode apenas nos dizer o que precisa e forneceremos uma
-              solução. Muitas empresas líderes já confiaram em nós. Você pode
-              ter certeza de que está em boas mãos. 😃
+              solução. Pode ter a certeza de que está em boas mãos. 😃
             </p>
             <AnchorLink to="/contato/#form">Vamos conversar</AnchorLink>
           </div>
