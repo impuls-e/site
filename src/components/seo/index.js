@@ -46,7 +46,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
             {seo.image && (
               <meta
                 property="og:image"
-                content="https://images.cdn3.stockunlimited.net/clipart/rocket_2029341.jpg"
+                content="https://uxwing.com/wp-content/themes/uxwing/download/14-transportation/rocket-launch.svg"
               />
             )}
 

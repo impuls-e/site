@@ -4,6 +4,10 @@
   position: fixed !important;
   animation: zoomInOut 10s infinite;
   z-index: -1;
+
+}
+.intro-background:before {
+  background-position: right;
 }
 @keyframes zoomInOut {
   0% {
