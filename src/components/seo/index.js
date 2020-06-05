@@ -57,6 +57,9 @@ const SEO = ({ title, description, image, pathname, article }) => (
             )}
             {seo.image && <meta property="og:image:width" content="200" />}
             {seo.image && <meta property="og:image:height" content="276" />}
+            
+            <meta name="twitter:site" content="https://twitter.com" />
+            <meta name="twitter:image" content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/61e93/logo.webp" />
             <meta name="twitter:card" content="summary_large_image" />
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />
