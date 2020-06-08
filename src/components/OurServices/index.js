@@ -1,10 +1,10 @@
 import React from "react"
 import { Container, Itens, Item, Description } from "./styles"
-import BannerBlog from "../bannerBlog"
+import BannerBlog from "../BannerBlog"
 import Img from "gatsby-image"
 
 import { useStaticQuery } from "gatsby"
-const Services = () => {
+const OurServices = () => {
   const data = useStaticQuery(graphql`
     query servicesQuery {
       frontend: allFile(
@@ -370,4 +370,4 @@ const Services = () => {
     </>
   )
 }
-export default Services
+export default OurServices

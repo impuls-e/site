@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import "./styles.css"
 import Img from "gatsby-image"
 
-export default function ProjetosSlick() {
+export default function Project() {
   const generateKey = pre => {
     return `${pre}_${new Date().getTime()}`
   }

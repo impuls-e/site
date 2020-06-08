@@ -2,7 +2,7 @@ import React from "react"
 import "./styles.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Undraw from "../../assets/undraw.svg"
-export default function introContacts() {
+export default function HeroContact() {
   return (
     <>
       <div className="intro-contacts">

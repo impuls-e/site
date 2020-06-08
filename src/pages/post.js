@@ -1,15 +1,15 @@
 import React from "react"
-import Header from "../components/header"
-import Seo from "../components/seo"
-import Layout from "../components/layout"
-import Contact from "../components/contact"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
+import Navigation from "../components/Navigation"
+import Contact from "../components/Contact"
 
 export default () => {
   return (
     <>
       <Layout>
         <Seo />
-        <Header />
+        <Navigation />
         <Contact />
       </Layout>
     </>

@@ -1,9 +1,9 @@
 import React from "react"
 import "./styles.css"
-import ProjetosSlick from "../projectsSlick"
-import Banner from "../banner"
+import Project from "../Project"
+import Banner from "../Banner"
 
-export default function Projetos() {
+export default function Projects() {
   return (
     <>
       <div id="projects" className="container projetos">
@@ -16,7 +16,7 @@ export default function Projetos() {
         >
           Projetos Recentes
         </h3>
-        <ProjetosSlick />
+        <Project />
       </div>
 
       <Banner />

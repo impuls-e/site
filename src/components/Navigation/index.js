@@ -6,7 +6,7 @@ import Rocket from "../../assets/rocket-icon.svg"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import BackgroundImage from "gatsby-background-image"
 
-export default function Header() {
+export default function Navigation() {
   const [movScroll, setMovScroll] = useState(false)
   const [movClick, setMovClick] = useState(false)
   const [hamburguer, setHamburguer] = useState(false)
@@ -19,7 +19,7 @@ export default function Header() {
     setMovClick(!movClick)
   }
   const data = useStaticQuery(graphql`
-    query HeaderQuery {
+    query NavigationQuery {
       allMdx(filter: { frontmatter: { tag: { eq: "header" } } }) {
         edges {
           node {

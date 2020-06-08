@@ -5,7 +5,7 @@ import Ecommerce from "../../assets/e-commerce.svg"
 import App from "../../assets/app.svg"
 import Lp from "../../assets/landing-page.svg"
 
-const We = () => {
+const OurDescription = () => {
   return (
     <>
       <Container className="container">
@@ -149,4 +149,4 @@ const We = () => {
   )
 }
 
-export default We
+export default OurDescription

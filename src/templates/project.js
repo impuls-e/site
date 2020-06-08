@@ -1,17 +1,17 @@
 import React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Header from "../components/header"
-import IntroProjects from "../components/introProjects"
-import Contact from "../components/contact"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
+import Navigation from "../components/Navigation"
+import HeroProject from "../components/HeroProject"
+import Contact from "../components/Contact"
 
 const ProjectTemplate = ({ pageContext }) => {
   const { project } = pageContext
   return (
     <Layout>
       <Seo />
-      <Header />
-      <IntroProjects
+      <Navigation />
+      <HeroProject
         title={project.title}
         description={project.description}
         liveUrl={project.liveUrl}

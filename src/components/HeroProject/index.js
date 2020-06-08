@@ -1,9 +1,8 @@
 import React from "react"
 import "./styles.css"
 import { FaExternalLinkAlt } from "react-icons/fa"
-import Img from "gatsby-image"
 
-export default function introProjects({
+export default function HeroProject({
   title,
   description,
   services,
