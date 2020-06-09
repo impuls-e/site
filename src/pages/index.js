@@ -1,23 +1,23 @@
 import React from "react"
-import Header from "../components/header"
-import Seo from "../components/seo"
-import Layout from "../components/layout"
-import Intro from "../components/intro"
-import Projetos from "../components/projects"
-import Services from "../components/services"
-import We from "../components/we"
+import Layout from "../components/Layout"
+import Seo from "../components/Seo"
+import Navigation from "../components/Navigation"
+import Hero from "../components/Hero"
+import OurDescription from "../components/OurDescription"
+import OurProjects from "../components/OurProjects"
+import OurServices from "../components/OurServices"
+import Contact from "../components/Contact"
 
-import Contact from "../components/contact"
 export default () => {
   return (
     <>
       <Layout>
         <Seo />
-        <Header />
-        <Intro />
-        <We />
-        <Projetos />
-        <Services />
+        <Navigation />
+        <Hero />
+        <OurDescription />
+        <OurProjects />
+        <OurServices />
         <Contact />
       </Layout>
     </>

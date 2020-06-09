@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Container, Button } from "./styles"
+import { Container } from "./styles"
 const BannerBlog = () => {
   return (
     <Container className="container">

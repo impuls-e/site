@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Container, Button } from "./styles"
+import { Container } from "./styles"
 const Banner = () => {
   return (
     <Container className="container">
