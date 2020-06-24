@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Inconsolata";
-  src: url("../../fonts/Inconsolata.ttf");
-}
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400,600,900&display=swap");
 :root {
   --secondary: #01a6baeb;
   --primary: #7557c7c7;
