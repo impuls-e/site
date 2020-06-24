@@ -14,8 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: 600ms ease 600ms 1 normal forwards running animation;
-  opacity: 0;
+  opacity: 1;
 }
 .intro .about .rocket {
   position: absolute;
@@ -23,7 +22,6 @@
   font-size: 48px;
   color: #fff;
   transform: rotate(-45deg);
-  -moz-transform: translate(0, 150px) rotate(-45deg);
   animation: mymove 2s infinite;
 }
 .intro .image {
