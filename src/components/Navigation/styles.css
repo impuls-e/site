@@ -4,7 +4,6 @@
   position: fixed !important;
   animation: zoomInOut 10s infinite;
   z-index: -1;
-
 }
 .intro-background:before {
   background-position: right;
@@ -114,6 +113,7 @@ header li a {
   color: var(--gray);
   font-size: 1.5rem;
   outline: none;
+  min-height: 48px;
   display: flex;
   text-decoration: none;
   transform: translateX(-10vw);
@@ -148,7 +148,7 @@ header ul.click li a {
 header li a:after {
   content: "";
   position: absolute;
-  bottom: -0.5rem;
+  bottom: 0.5rem;
   left: 0;
   width: 55%;
   height: 2px;
