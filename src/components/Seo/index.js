@@ -23,6 +23,10 @@ const SEO = () => (
             <meta name="description" content={siteDescription} />
             <meta name="image" content={image} />
             <meta charSet="utf-8" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            ></meta>
             {siteUrl && <meta property="og:url" content={siteUrl} />}
 
             <meta property="og:type" content="website" />
@@ -31,9 +35,19 @@ const SEO = () => (
             {siteDescription && (
               <meta property="og:description" content={siteDescription} />
             )}
-            {image && <meta property="og:image" content="image" />}
+            {image && (
+              <meta
+                property="og:image"
+                content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/69585/logo.png"
+              />
+            )}
 
-            {image && <meta property="og:image:url" content={image} />}
+            {image && (
+              <meta
+                property="og:image:url"
+                content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/69585/logo.png"
+              />
+            )}
 
             {image && <meta property="og:image:type" content="image/jpeg" />}
             {image && <meta name="twitter:site" content="@impulsewks"></meta>}
@@ -45,7 +59,12 @@ const SEO = () => (
             {siteDescription && (
               <meta name="twitter:description" content={siteDescription} />
             )}
-            {image && <meta name="twitter:image" content={image} />}
+            {image && (
+              <meta
+                name="twitter:image"
+                content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/69585/logo.png"
+              />
+            )}
           </Helmet>
         </>
       )

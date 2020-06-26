@@ -21,8 +21,8 @@ export default function Intro() {
       />
       <div className="container intro">
         <div className="about">
-          <h1>Impulse</h1>
-          <h2>Um salto no seu negócio</h2>
+          <h1>Impuls-e</h1>
+          <h2>Sites e Soluções inteligentes.</h2>
           <AnchorLink
             className="button"
             to="/contato/#form"
