@@ -39,7 +39,6 @@ a {
   font-family: "Inconsolata", monospace;
   letter-spacing: 0.5px;
   color: var(--gray);
-  letter-spacing: -1px;
 }
 
 .container {

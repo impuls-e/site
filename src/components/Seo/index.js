@@ -1,74 +1,51 @@
+/* eslint-disable graphql/template-strings */
 import React from "react"
 import { Helmet } from "react-helmet"
-import PropTypes from "prop-types"
-import { StaticQuery } from "gatsby"
-const SEO = ({ title, description, image, pathname, article }) => (
+import { StaticQuery, graphql } from "gatsby"
+const SEO = () => (
   <StaticQuery
     query={query}
     render={({
       site: {
         siteMetadata: {
-          defaultTitle,
-          titleTemplate,
-          defaultDescription,
+          siteTitle,
+          siteDescription,
           siteUrl,
-          defaultImage,
-          twitterUsername,
+          siteImage,
+          siteTwitter,
         },
       },
     }) => {
-      const seo = {
-        title: title || defaultTitle,
-        description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname || "/"}`,
-      }
+      const image = `${siteUrl}${siteImage}`
       return (
         <>
-          <Helmet title={seo.title} titleTemplate={titleTemplate}>
-            <meta
-              name="google-site-verification"
-              content="6ono1job-Zov9EJpbYygR5LlE9fwCFD2S9pWvRaJEzY"
-            />
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
+          <Helmet title={siteTitle} descriptionTemplate={siteDescription}>
+            <meta name="description" content={siteDescription} />
+            <meta name="image" content={image} />
             <meta charSet="utf-8" />
-            {seo.url && <meta property="og:url" content={seo.url} />}
-            {(article ? true : null) && (
-              <meta property="og:type" content="article" />
-            )}
+            {siteUrl && <meta property="og:url" content={siteUrl} />}
+
             <meta property="og:type" content="website" />
 
-            {seo.title && <meta property="og:title" content={seo.title} />}
-            {seo.description && (
-              <meta property="og:description" content={seo.description} />
+            {siteTitle && <meta property="og:title" content={siteTitle} />}
+            {siteDescription && (
+              <meta property="og:description" content={siteDescription} />
             )}
-            {seo.image && (
-              <meta
-                property="og:image"
-                content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/61e93/logo.webp"
-              />
-            )}
+            {image && <meta property="og:image" content="image" />}
 
-            {seo.image && <meta property="og:image:url" content={seo.image} />}
+            {image && <meta property="og:image:url" content={image} />}
 
-            {seo.image && (
-              <meta property="og:image:type" content="image/jpeg" />
-            )}
-            {seo.image && <meta property="og:image:width" content="200" />}
-            {seo.image && <meta property="og:image:height" content="276" />}
-            
-            <meta name="twitter:site" content="https://twitter.com" />
-            <meta name="twitter:image" content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/61e93/logo.webp" />
+            {image && <meta property="og:image:type" content="image/jpeg" />}
+            {image && <meta name="twitter:site" content="@impulsewks"></meta>}
             <meta name="twitter:card" content="summary_large_image" />
-            {twitterUsername && (
-              <meta name="twitter:creator" content={twitterUsername} />
+            {siteTwitter && (
+              <meta name="twitter:creator" content={siteTwitter} />
             )}
-            {seo.title && <meta name="twitter:title" content={seo.title} />}
-            {seo.description && (
-              <meta name="twitter:description" content={seo.description} />
+            {siteTitle && <meta name="twitter:title" content={siteTitle} />}
+            {siteDescription && (
+              <meta name="twitter:description" content={siteDescription} />
             )}
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
+            {image && <meta name="twitter:image" content={image} />}
           </Helmet>
         </>
       )
@@ -76,30 +53,15 @@ const SEO = ({ title, description, image, pathname, article }) => (
   />
 )
 export default SEO
-SEO.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  pathname: PropTypes.string,
-  article: PropTypes.bool,
-}
-SEO.defaultProps = {
-  title: null,
-  description: null,
-  image: null,
-  pathname: null,
-  article: false,
-}
 const query = graphql`
   query SEO {
     site {
       siteMetadata {
-        defaultTitle: title
-        titleTemplate
-        defaultDescription: description
-        siteUrl: url
-        defaultImage: image
-        twitterUsername
+        siteTitle
+        siteDescription
+        siteUrl
+        siteImage
+        siteTwitter
       }
     }
   }
