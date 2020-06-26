@@ -28,8 +28,9 @@ const SEO = ({ title, description, image, pathname, article }) => (
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta
               name="google-site-verification"
-              content="6ono1job-Zov9EJpbYygR5LlE9fwCFD2S9pWvRaJEzY"
+              content="3rrVojyccX1AnT_5-84qWDzn3S3NAvs2c6OvqgOLFYs"
             />
+
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <meta charSet="utf-8" />
@@ -57,9 +58,12 @@ const SEO = ({ title, description, image, pathname, article }) => (
             )}
             {seo.image && <meta property="og:image:width" content="200" />}
             {seo.image && <meta property="og:image:height" content="276" />}
-            
+
             <meta name="twitter:site" content="https://twitter.com" />
-            <meta name="twitter:image" content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/61e93/logo.webp" />
+            <meta
+              name="twitter:image"
+              content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/61e93/logo.webp"
+            />
             <meta name="twitter:card" content="summary_large_image" />
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />
