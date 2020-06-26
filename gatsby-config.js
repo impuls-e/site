@@ -1,30 +1,23 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
 const config = require("./data/config")
 
 module.exports = {
   siteMetadata: {
-    title: "Impulse",
-    titleTemplate: "%s · Um salto no seu negócio",
-    description:
-      "Conceitos de design com inovação digital para criar sites e landing pages fáceis de usar e que trazem resultados.",
-    url: "https://impulse.works",
-    siteUrl: "https://impulse.works", // No trailing slash allowed!
-    image: `${__dirname}/src/images/logo.png`, // Path to your image you placed in the 'static' folder
-    twitterUsername: "@impuls-e",
+    siteTitle: config.siteTitle,
+    siteDescription: config.siteDescription,
+    siteTitleShort: config.siteTitleShort,
+    siteUrl: config.siteUrl, // No trailing slash allowed!
+    siteImage: config.siteImage, // Path to your image you placed in the 'static' folder
+    siteIcon: config.siteIcon,
+    siteRss: config.siteRss,
+    themeColor: config.themeColor,
+    backgroundColor: config.backgroundColor,
+    author: config.author,
+    siteTwitter: config.siteTwitter,
+    siteGoogleAnalyticsID: config.siteGoogleAnalyticsID,
   },
   plugins: [
-    `gatsby-plugin-anchor-links`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/content/`,
-      },
-    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -32,20 +25,22 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-mdx`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-background-image`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        google: {
-          families: ["Inconsolata:400,600,900"],
-        },
+        name: `content`,
+        path: `${__dirname}/content/`,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: config.siteGoogleAnalyticsID,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-mdx`,
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -56,13 +51,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "standalone",
-        icon: "src/assets/rocket-icon.svg",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: config.googleAnalyticsID,
+        icon: config.siteIcon,
       },
     },
     {
@@ -71,12 +60,31 @@ module.exports = {
         lang: "pt-BR",
       },
     },
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Inconsolata:400,600,900"],
+        },
+      },
+    },
+
+    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-background-image`,
+
+    {
+      resolve: "gatsby-plugin-extract-schema",
+      options: {
+        dest: `${__dirname}/path/to/schema.json`,
+      },
+    },
+
+    `gatsby-plugin-next-seo`,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://impuls-e.works",
-        sitemap: "https://impuls-e.works/sitemap.xml",
+        host: config.siteUrl,
+        sitemap: `${config.siteGoogleAnalyticsID}, sitemap.xml`,
         env: {
           development: {
             policy: [{ userAgent: "*", disallow: ["/"] }],
@@ -87,14 +95,7 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-advanced-sitemap`,
-    {
-      resolve: "gatsby-plugin-extract-schema",
-      options: {
-        dest: `${__dirname}/path/to/schema.json`,
-      },
-    },
-    `gatsby-plugin-next-seo`,
+
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
@@ -111,6 +112,13 @@ module.exports = {
         exitEventName: "sal:out", // Exit event name
       },
     },
+
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
+
+    `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-styled-components`,
+
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
