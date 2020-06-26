@@ -113,7 +113,6 @@ header li a {
   color: var(--gray);
   font-size: 1.5rem;
   outline: none;
-  min-height: 48px;
   display: flex;
   text-decoration: none;
   transform: translateX(-10vw);
@@ -143,6 +142,8 @@ header ul.click li a {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 header li a:after {
