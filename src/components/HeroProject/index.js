@@ -7,7 +7,10 @@ export default function HeroProject({
   description,
   services,
   liveUrl,
-  pagespeed,
+  defaultImg,
+  cellphone,
+  tablet,
+  desktop,
 }) {
   return (
     <div className="intro-projects">
@@ -19,7 +22,7 @@ export default function HeroProject({
         </a>
       </section>
       <aside>
-        <h4>Métricas de velocidade</h4>
+        <h4>Imagens</h4>
         <div
           className="image"
           data-sal="slide-up"
@@ -27,7 +30,10 @@ export default function HeroProject({
           data-sal-easing="ease"
           data-sal-duration="1000"
         >
-          <img src={pagespeed} alt="pagespeed test image of project" />
+          <img src={defaultImg} alt="A image of project" />
+          <img src={cellphone} alt="A image of project" />
+          <img src={tablet} alt="A image of project" />
+          <img src={desktop} alt="A image of project" />
         </div>
         <h4>Technologias utilizadas</h4>
         <ul className="list-icons type-horizontal">

@@ -17,7 +17,29 @@ export default function Project() {
               title
               handle
               services
-              imgUrl {
+              liveUrl
+              defaultImg {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              cellphone {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              tablet {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              desktop {
                 childImageSharp {
                   fluid(maxHeight: 550) {
                     ...GatsbyImageSharpFluid
@@ -49,7 +71,7 @@ export default function Project() {
             data-sal-duration="1000"
           >
             <Img
-              fluid={project.node.frontmatter.imgUrl.childImageSharp.fluid}
+              fluid={project.node.frontmatter.defaultImg.childImageSharp.fluid}
               alt="An image apresentation from current project"
             />
           </div>

@@ -20,7 +20,28 @@ exports.createPages = async ({ graphql, actions }) => {
               handle
               services
               liveUrl
-              pagespeed {
+              defaultImg {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    src
+                  }
+                }
+              }
+              cellphone {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    src
+                  }
+                }
+              }
+              tablet {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    src
+                  }
+                }
+              }
+              desktop {
                 childImageSharp {
                   fluid(maxHeight: 550) {
                     src

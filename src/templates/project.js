@@ -16,7 +16,10 @@ const ProjectTemplate = ({ pageContext }) => {
         description={project.description}
         liveUrl={project.liveUrl}
         services={project.services}
-        pagespeed={project.pagespeed.childImageSharp.fluid.src}
+        defaultImg={project.defaultImg.childImageSharp.fluid.src}
+        cellphone={project.cellphone.childImageSharp.fluid.src}
+        tablet={project.tablet.childImageSharp.fluid.src}
+        desktop={project.desktop.childImageSharp.fluid.src}
       />
       <Contact />
     </Layout>

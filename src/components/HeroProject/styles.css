@@ -32,6 +32,15 @@
   text-align: center;
   margin-bottom: 4vh;
 }
+.intro-projects aside div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-projects aside div img {
+  margin-bottom: 2vh;
+}
 .intro-projects aside ul {
   display: flex;
   flex-wrap: wrap;
