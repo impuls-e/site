@@ -4,7 +4,7 @@
 
 ## Project
 
-Website of Impuls-e company.
+Website of Impuls-e.
 
 ## Description
 
@@ -20,15 +20,14 @@ git clone https://github.com/impuls-e/site.git
 
 - Install library and dependencies:
 
-`````javascript
+```javascript
 yarn install
 ```
 
 - Run site locally:
 
-````javascript
+```javascript
 gatsby develop
 ```
 
 Website will be up in url: [http://localhost:8000](http://localhost:8000).
-`````
