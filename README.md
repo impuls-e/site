@@ -2,18 +2,33 @@
   Impulse Works
 </h3>
 
+## Project
+
+Website of Impuls-e company.
+
 ## Description
 
 Impuls-e is a Digital Agency focused on helping our clients build their online digital presence.
 
-## Solution
+## Production
 
-[Site](https://impuls-e.works/) developed with the Gatsby framework.
-Below some information about the result.
+- Clone this project:
 
-> All information is based on the ** Mobile ** screen and was taken from the website[PageSpeedInsights](https://developers.google.com/speed/pagespeed/insights/) > - By Google
+```javascript
+git clone https://github.com/impuls-e/site.git
+```
 
-- The page score was **83** points.
-- The time that the first content is drawn on the screen was **1.3 s**.
-- The speed index was **1.3 s**.
-- The time it takes the page to be completely interactive was **5.1 s**.
+- Install library and dependencies:
+
+`````javascript
+yarn install
+```
+
+- Run site locally:
+
+````javascript
+gatsby develop
+```
+
+Website will be up in url: [http://localhost:8000](http://localhost:8000).
+`````
