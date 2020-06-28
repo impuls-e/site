@@ -69,7 +69,7 @@ const Project = () => {
           </Image>
           <Description
             className="info-item"
-            data-sal="slide-left"
+            data-sal="slide-up"
             data-sal-delay="200"
             data-sal-easing="ease"
             data-sal-duration="1000"

@@ -115,21 +115,21 @@ export const HeaderMenu = styled.ul`
     a {
       position: relative;
       color: var(--gray);
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       outline: none;
       display: flex;
       text-decoration: none;
       transform: translateX(-10vw);
       visibility: hidden;
       opacity: 0;
-
+      align-items: center;
       min-height: 48px;
       min-width: 48px;
 
       &:after {
         content: "";
         position: absolute;
-        bottom: 1.5rem;
+        bottom: 0.5rem;
         left: 0;
         width: 55%;
         height: 2px;
