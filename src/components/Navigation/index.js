@@ -1,12 +1,10 @@
 import React, { useState } from "react"
-import "./styles.css"
-import { useStaticQuery } from "gatsby"
+import { Container, Hamburguer, Logo, HeaderMenu } from "./styles.js"
 import Rocket from "../../assets/rocket-icon.svg"
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import BackgroundImage from "gatsby-background-image"
 
-export default function Navigation() {
+const Navigation = () => {
   const [movScroll, setMovScroll] = useState(false)
   const [movClick, setMovClick] = useState(false)
   const [hamburguer, setHamburguer] = useState(false)
@@ -18,50 +16,23 @@ export default function Navigation() {
     setHamburguer(!hamburguer)
     setMovClick(!movClick)
   }
-  const data = useStaticQuery(graphql`
-    query NavigationQuery {
-      allMdx(filter: { frontmatter: { tag: { eq: "header" } } }) {
-        edges {
-          node {
-            frontmatter {
-              description
-              title
-            }
-          }
-        }
-      }
-      desktop: file(relativePath: { eq: "bg.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
-  const imageData = data.desktop.childImageSharp.fluid
 
   return (
     <>
-      <BackgroundImage
-        Tag="section"
-        className={"intro-background"}
-        fluid={imageData}
-      />
-      <header className={`header`}>
-        <button
+      <Container>
+        <Hamburguer
           onClick={handleClick}
           className={`hamburguermenu ${clickStyle}  `}
         >
           <div></div>
           <div></div>
           <div></div>
-        </button>
-        <AnchorLink className={`logo ${moveStyle} `} to="/" title="home">
+        </Hamburguer>
+        <Logo className={`logo ${moveStyle} `} to="/" title="home">
           <Rocket />
-        </AnchorLink>
+        </Logo>
 
-        <ul className={`menu ${clickStyle}  ${moveStyle} `}>
+        <HeaderMenu className={`menu ${clickStyle}  ${moveStyle} `}>
           <li>
             <AnchorLink onClick={handleClick} to="/" title="Our home">
               Home
@@ -90,8 +61,10 @@ export default function Navigation() {
               Contato
             </AnchorLink>
           </li>
-        </ul>
-      </header>
+        </HeaderMenu>
+      </Container>
     </>
   )
 }
+
+export default Navigation

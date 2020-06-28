@@ -1,14 +1,15 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Navigation from "../components/Navigation"
-import HeroProject from "../components/HeroProject"
-import Contact from "../components/Contact"
+import HeroProject from "../containers/HeroProject"
+import Contact from "../containers/Contact"
+import GlobalStyle from "../styles/global"
 
 const ProjectTemplate = ({ pageContext }) => {
   const { project } = pageContext
   return (
-    <Layout>
+    <>
+      <GlobalStyle />
       <Seo />
       <Navigation />
       <HeroProject
@@ -22,7 +23,7 @@ const ProjectTemplate = ({ pageContext }) => {
         desktop={project.desktop.childImageSharp.fluid.src}
       />
       <Contact />
-    </Layout>
+    </>
   )
 }
 export default ProjectTemplate

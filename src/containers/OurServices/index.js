@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Itens, Item, Description } from "./styles"
-import BannerBlog from "../BannerBlog"
+import BannerBlog from "../../components/BannerBlog"
 import Img from "gatsby-image"
 
 import { useStaticQuery } from "gatsby"

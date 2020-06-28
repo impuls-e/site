@@ -1,12 +1,13 @@
 import React from "react"
-import "./styles.css"
-import Project from "../Project"
-import Banner from "../Banner"
+import Project from "../../components/Project"
+import Banner from "../../components/Banner"
+import { Container } from "./styles"
 
-export default function Projects() {
+const Projects = () => {
   return (
     <>
-      <div id="projects" className="container projetos">
+      <Banner />
+      <Container>
         <h3
           className="contact-info"
           data-sal="slide-up"
@@ -17,9 +18,9 @@ export default function Projects() {
           Projetos Recentes
         </h3>
         <Project />
-      </div>
-
+      </Container>
       <Banner />
     </>
   )
 }
+export default Projects

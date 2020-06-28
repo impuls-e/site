@@ -9,10 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   background-color: #7557c7;
-  @media (min-width: 765px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+
   h4 {
     font-size: 1.8rem;
     letter-spacing: -1px;
@@ -47,5 +44,11 @@ export const Container = styled.div`
       color: var(--primary);
       background-color: var(--white);
     }
+  }
+  @media (min-width: 765px) {
+    margin-left: 8vw;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 12vw;
   }
 `

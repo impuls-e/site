@@ -1,19 +1,18 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Navigation from "../components/Navigation"
-import HeroContact from "../components/HeroContact"
-import Contact from "../components/Contact"
+import HeroContact from "../containers/HeroContact"
+import Contact from "../containers/Contact"
+import GlobalStyle from "../styles/global"
 
 export default () => {
   return (
     <>
-      <Layout>
-        <Seo />
-        <Navigation />
-        <HeroContact />
-        <Contact />
-      </Layout>
+      <GlobalStyle />
+      <Seo />
+      <Navigation />
+      <HeroContact />
+      <Contact />
     </>
   )
 }

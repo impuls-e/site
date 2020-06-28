@@ -9,6 +9,9 @@ export const Container = styled.section`
   strong {
     color: var(--primary);
   }
+  @media (min-width: 765px) {
+    margin-left: 8vw;
+  }
 `
 export const Description = styled.div`
   width: 100%;
@@ -70,6 +73,7 @@ export const Item = styled.div`
     flex-wrap: wrap;
     margin-bottom: 1vh;
     justify-content: center;
+    list-style: none;
     li {
       margin: 1vw;
       position: relative;

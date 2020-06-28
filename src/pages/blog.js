@@ -1,17 +1,16 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Navigation from "../components/Navigation"
-import Contact from "../components/Contact"
+import Contact from "../containers/Contact"
+import GlobalStyle from "../styles/global"
 
 export default () => {
   return (
     <>
-      <Layout>
-        <Seo />
-        <Navigation />
-        <Contact />
-      </Layout>
+      <GlobalStyle />
+      <Seo />
+      <Navigation />
+      <Contact />
     </>
   )
 }

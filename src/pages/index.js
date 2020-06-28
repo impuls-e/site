@@ -1,25 +1,27 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 import Navigation from "../components/Navigation"
-import Hero from "../components/Hero"
-import OurDescription from "../components/OurDescription"
-import OurProjects from "../components/OurProjects"
-import OurServices from "../components/OurServices"
-import Contact from "../components/Contact"
+import BackgroundImage from "../components/BackgroundImage"
+import Hero from "../containers/Hero"
+import About from "../containers/About"
+import Projects from "../containers/Projects"
+import OurServices from "../containers/OurServices"
+import Contact from "../containers/Contact"
+
+import GlobalStyle from "../styles/global"
 
 export default () => {
   return (
     <>
-      <Layout>
-        <Seo />
-        <Navigation />
-        <Hero />
-        <OurDescription />
-        <OurProjects />
-        <OurServices />
-        <Contact />
-      </Layout>
+      <GlobalStyle />
+      <Seo />
+      <Navigation />
+      <BackgroundImage />
+      <Hero />
+      <About />
+      <Projects />
+      <OurServices />
+      <Contact />
     </>
   )
 }

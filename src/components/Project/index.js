@@ -1,9 +1,10 @@
+/* eslint-disable graphql/template-strings */
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import "./styles.css"
+import { useStaticQuery, graphql } from "gatsby"
+import { Container, Image, Description, Techs, Button } from "./styles.js"
 import Img from "gatsby-image"
 
-export default function Project() {
+const Project = () => {
   const generateKey = pre => {
     return `${pre}_${new Date().getTime()}`
   }
@@ -59,23 +60,14 @@ export default function Project() {
   return (
     <>
       {projects.map(project => (
-        <div
-          key={generateKey(project.node.frontmatter.handle)}
-          className="item"
-        >
-          <div
-            className="image"
-            data-sal="slide-right"
-            data-sal-delay="200"
-            data-sal-easing="ease"
-            data-sal-duration="1000"
-          >
+        <Container key={generateKey(project.node.frontmatter.handle)}>
+          <Image className="image">
             <Img
               fluid={project.node.frontmatter.defaultImg.childImageSharp.fluid}
               alt="An image apresentation from current project"
             />
-          </div>
-          <div
+          </Image>
+          <Description
             className="info-item"
             data-sal="slide-left"
             data-sal-delay="200"
@@ -84,20 +76,21 @@ export default function Project() {
           >
             <h4>{project.node.frontmatter.title}</h4>
             <p>{project.node.frontmatter.description}</p>
-            <ul className="list-icons type-horizontal">
+            <Techs className="list-icons type-horizontal">
               {project.node.frontmatter.services.split(", ").map(tech => (
                 <li key={tech}>
                   <img src={`/services/${tech}.png`} alt={tech} />
                   <span>{tech}</span>
                 </li>
               ))}
-            </ul>
-            <Link to={`/project/${project.node.frontmatter.handle}`}>
+            </Techs>
+            <Button to={`/project/${project.node.frontmatter.handle}`}>
               Ver Projeto
-            </Link>
-          </div>
-        </div>
+            </Button>
+          </Description>
+        </Container>
       ))}
     </>
   )
 }
+export default Project

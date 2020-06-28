@@ -1,16 +1,15 @@
 import React from "react"
-
 import { useStaticQuery } from "gatsby"
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
-import "./styles.css"
 import Img from "gatsby-image"
 import { FiPhoneCall } from "react-icons/fi"
 import { IoMdPaperPlane } from "react-icons/io"
 import BackgroundImage from "gatsby-background-image"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-export default function Contact() {
+import { Container, ContactContent, Description, Footer } from "./styles.js"
+const Contact = () => {
   const data = useStaticQuery(graphql`
     query logoQuery {
       desktop: file(relativePath: { eq: "logo.png" }) {
@@ -34,9 +33,9 @@ export default function Contact() {
 
   return (
     <>
-      <div id="#contact" className="container contact">
-        <div className="contact-section">
-          <div
+      <Container id="#contact">
+        <ContactContent>
+          <Description
             className="contact-info"
             data-sal="slide-up"
             data-sal-delay="200"
@@ -45,7 +44,7 @@ export default function Contact() {
           >
             <Img fluid={logo} alt="logo Impulse" />
             <h4>Vamos Conversar</h4>
-            <div>
+            <div class="social-icons">
               <a href="https://wa.me/5548999101220" target="_blank">
                 <FiPhoneCall />
                 (48) 999-101-220
@@ -58,11 +57,11 @@ export default function Contact() {
             <AnchorLink className="button" to="/contato" title="Contact us">
               Entre em contato
             </AnchorLink>
-          </div>
+          </Description>
           <BackgroundImage Tag="section" className={"map"} fluid={maps} />
-        </div>
-        <footer>
-          <div className="social-icons">
+        </ContactContent>
+        <Footer>
+          <div>
             <OutboundLink href="https://github.com/impuls-e">
               <FaGithub />
             </OutboundLink>
@@ -95,8 +94,9 @@ export default function Contact() {
               </AnchorLink>
             </li>
           </ul>
-        </footer>
-      </div>
+        </Footer>
+      </Container>
     </>
   )
 }
+export default Contact

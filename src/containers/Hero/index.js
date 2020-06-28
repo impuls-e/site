@@ -1,11 +1,11 @@
 import React from "react"
-import "./styles.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { FaRocket } from "react-icons/fa"
 
 import { SocialProfileJsonLd } from "gatsby-plugin-next-seo"
+import { Container, HeroContent } from "./styles.js"
 
-export default function Intro() {
+const Hero = () => {
   return (
     <>
       <SocialProfileJsonLd
@@ -19,10 +19,12 @@ export default function Intro() {
           "https://github.com/impuls-e",
         ]}
       />
-      <div className="container intro">
-        <div className="about">
+      <Container>
+        <HeroContent>
           <h1>Impuls-e</h1>
-          <h2>Sites e Soluções inteligentes.</h2>
+          <h2>
+            <span>Sites</span> e <span>Soluções</span> inteligentes.
+          </h2>
           <AnchorLink
             className="button"
             to="/contato/#form"
@@ -37,8 +39,9 @@ export default function Intro() {
           >
             <FaRocket />
           </AnchorLink>
-        </div>
-      </div>
+        </HeroContent>
+      </Container>
     </>
   )
 }
+export default Hero

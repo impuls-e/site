@@ -9,6 +9,10 @@ export const Container = styled.section`
   strong {
     color: var(--primary);
   }
+
+  @media (min-width: 765px) {
+    margin-left: 8vw;
+  }
 `
 export const Description = styled.div`
   padding: 10vh 4vw 8vh;

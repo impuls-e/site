@@ -1,13 +1,15 @@
 import React from "react"
-import "./styles.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Undraw from "../../assets/undraw.svg"
-export default function HeroContact() {
+
+import { Container, Description, Form } from "./styles"
+
+const HeroContact = () => {
   return (
     <>
-      <div className="intro-contacts">
-        <section>
-          <div className="contacts-about">
+      <Container>
+        <Description>
+          <div>
             <h1>Vamos construir algo extraordinário juntos.</h1>
             <p>
               Você pode apenas nos dizer o que precisa e forneceremos uma
@@ -18,8 +20,8 @@ export default function HeroContact() {
           <aside>
             <Undraw />
           </aside>
-        </section>
-        <form
+        </Description>
+        <Form
           id="form"
           name="contact"
           method="post"
@@ -97,8 +99,9 @@ export default function HeroContact() {
           </div>
 
           <button type="submit">Enviar</button>
-        </form>
-      </div>
+        </Form>
+      </Container>
     </>
   )
 }
+export default HeroContact

@@ -1,8 +1,9 @@
 import React from "react"
-import "./styles.css"
 import { FaExternalLinkAlt } from "react-icons/fa"
 
-export default function HeroProject({
+import { Container, Description, Content, Mockups, Techs } from "./styles.js"
+
+const HeroProject = ({
   title,
   description,
   services,
@@ -11,19 +12,19 @@ export default function HeroProject({
   cellphone,
   tablet,
   desktop,
-}) {
+}) => {
   return (
-    <div className="intro-projects">
-      <section>
+    <Container>
+      <Description>
         <h1>{title}</h1>
         <p>{description}</p>
         <a className="site" href={liveUrl}>
           Veja o site <FaExternalLinkAlt />
         </a>
-      </section>
-      <aside>
+      </Description>
+      <Content>
         <h4>Imagens</h4>
-        <div
+        <Mockups
           className="image"
           data-sal="slide-up"
           data-sal-delay="200"
@@ -34,17 +35,18 @@ export default function HeroProject({
           <img src={cellphone} alt="A image of project" />
           <img src={tablet} alt="A image of project" />
           <img src={desktop} alt="A image of project" />
-        </div>
+        </Mockups>
         <h4>Technologias utilizadas</h4>
-        <ul className="list-icons type-horizontal">
+        <Techs className="list-icons type-horizontal">
           {services.split(", ").map(tech => (
             <li className="">
               <img src={`/services/${tech}.png`} alt={tech} />
               <span>{tech}</span>
             </li>
           ))}
-        </ul>
-      </aside>
-    </div>
+        </Techs>
+      </Content>
+    </Container>
   )
 }
+export default HeroProject
