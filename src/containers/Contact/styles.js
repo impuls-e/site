@@ -5,7 +5,7 @@ export const Container = styled.section`
   background-color: #fff;
   flex-direction: column;
   background-color: var(--black);
-
+  color: var(--white);
   @media (min-width: 765px) {
     margin-left: 8vw;
   }
@@ -16,6 +16,7 @@ export const ContactContent = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: var(--white);
 
   .map {
     width: 100%;
@@ -60,6 +61,8 @@ export const Description = styled.div`
       font-size: 1.3rem;
       text-decoration: none;
       margin-bottom: 6vh;
+      color: var(--white);
+
       svg {
         margin-right: 0.5vw;
       }
@@ -69,7 +72,7 @@ export const Description = styled.div`
     }
   }
   .button {
-    color: var(--primary);
+    color: var(--white);
     width: 240px;
     min-width: 216px;
     border-radius: 25px;
@@ -117,6 +120,8 @@ export const Footer = styled.section`
       font-size: 1.3rem;
       min-width: 48px;
       min-height: 48px;
+      color: var(--white);
+
       cursor: pointer;
       &:hover {
         transition: all 0.2s ease-in-out;
@@ -138,6 +143,8 @@ export const Footer = styled.section`
       font-size: 1.3rem;
       min-width: 48px;
       min-height: 48px;
+      color: var(--white);
+
       &:hover {
         transition: all 0.2s ease-in-out;
         color: var(--primary);
