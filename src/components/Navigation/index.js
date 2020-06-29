@@ -5,14 +5,14 @@ import Rocket from "../../assets/rocket-icon.svg"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Navigation = () => {
-  const [movClick, setMovClick] = useState(false)
+  const [click, setClick] = useState(false)
   const [hamburguer, setHamburguer] = useState(false)
 
-  const clickStyle = movClick ? "click" : ""
+  const clickStyle = click ? "click" : ""
 
   function handleClick() {
     setHamburguer(!hamburguer)
-    setMovClick(!movClick)
+    setMovClick(!click)
   }
 
   return (
@@ -30,7 +30,7 @@ const Navigation = () => {
           <Rocket />
         </Logo>
 
-        <HeaderMenu className={`menu ${clickStyle}  ${moveStyle} `}>
+        <HeaderMenu className={`menu ${clickStyle}`}>
           <li>
             <AnchorLink onClick={handleClick} to="/" title="Our home">
               Home
