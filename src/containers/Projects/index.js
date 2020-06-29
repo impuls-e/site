@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <Banner />
-      <Container>
+      <Container id="projects">
         <h3
           className="contact-info"
           data-sal="slide-up"

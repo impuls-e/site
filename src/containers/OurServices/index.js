@@ -100,7 +100,7 @@ const OurServices = () => {
   console.log(frontend)
   return (
     <>
-      <Container id="services" className="container">
+      <Container id="services">
         <Description>
           <h3
             data-sal="slide-up"
