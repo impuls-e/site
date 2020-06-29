@@ -25,7 +25,7 @@ const SEO = () => (
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
-          ></meta>
+          />
           <meta
             name="google-site-verification"
             content="3rrVojyccX1AnT_5-84qWDzn3S3NAvs2c6OvqgOLFYs"
@@ -41,14 +41,14 @@ const SEO = () => (
           {image && (
             <meta
               property="og:image"
-              content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/69585/logo.png"
+              content="https://impuls-e.works/static/092f7fc6502a3ac817372bfb530fee6f/61e93/logo.webp"
             />
           )}
 
           {image && (
             <meta
               property="og:image:url"
-              content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/69585/logo.png"
+              content="https://impuls-e.works/static/092f7fc6502a3ac817372bfb530fee6f/61e93/logo.webp"
             />
           )}
 
@@ -63,7 +63,7 @@ const SEO = () => (
           {image && (
             <meta
               name="twitter:image"
-              content="https://impuls-e.works/static/d1810ab9eeabf17a1fec022a86a8546b/69585/logo.png"
+              content="https://impuls-e.works/static/092f7fc6502a3ac817372bfb530fee6f/61e93/logo.webp"
             />
           )}
         </Helmet>
