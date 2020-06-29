@@ -12,7 +12,7 @@ const Navigation = () => {
 
   function handleClick() {
     setHamburguer(!hamburguer)
-    setMovClick(!click)
+    setClick(!click)
   }
 
   return (
