@@ -3,24 +3,30 @@ import styled, { keyframes } from "styled-components"
 const mymove = keyframes`
   0% {
     bottom: 0;
+    -webkit-transform:rotate3d(0, 0, 0, 0);
   }
   50% {
     bottom: 20px;
+    -webkit-transform:rotate3d(0, 0, 0, 0);
   }
   100% {
     bottom: 0;
+    -webkit-transform:rotate3d(0, 0, 0, 0);
   }
 `
 
 const titleRotation = keyframes`
   0% {
     transform: rotate3d(0, 0, 0, 0);
+    -webkit-transform:rotate3d(0, 0, 0, 0);
   }
   33% {
     transform: rotate3d(0, 1, 0.1, 15deg);
+    -webkit-transform:rotate3d(0, 0, 0, 0);
   }
   66% {
     transform: rotate3d(0, 1, 0.1, -15deg);
+    -webkit-transform:rotate3d(0, 0, 0, 0);
   }
 `
 
@@ -54,6 +60,10 @@ export const HeroContent = styled.div`
     font-weight: 900;
     margin-bottom: 3vh;
     animation: ${titleRotation} 8s infinite;
+    -webkit-animation-name: ${titleRotation};
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
   }
   h2 {
     color: var(--white);
@@ -94,5 +104,9 @@ export const HeroContent = styled.div`
     color: #fff;
     transform: rotate(-45deg);
     animation: ${mymove} 2s infinite;
+    -webkit-animation-name: ${mymove};
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
   }
 `
