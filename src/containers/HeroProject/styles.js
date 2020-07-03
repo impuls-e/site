@@ -27,7 +27,7 @@ export const Description = styled.div`
   align-items: center;
 
   h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     text-align: center;
     color: var(--gray);
     margin-bottom: 4vh;
@@ -39,6 +39,25 @@ export const Description = styled.div`
     font-weight: 400;
     text-align: center;
     margin-bottom: 4vh;
+  }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 0;
+  h4 {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 0 0;
+    text-align: center;
+    font-size: 2.3rem;
   }
   a {
     color: #00000096;
@@ -67,19 +86,6 @@ export const Description = styled.div`
     svg {
       margin-left: 1vw;
     }
-  }
-`
-
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 6vh;
-  h4 {
-    display: flex;
-    flex-direction: column;
-    margin: 8vh 0 0;
-    text-align: center;
-    font-size: 2.3rem;
   }
   @media (min-width: 768px) {
     margin-bottom: 10vh;

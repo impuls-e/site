@@ -43,7 +43,7 @@ export const Description = styled.div`
     text-align: center;
     color: var(--gray);
     font-weight: 900;
-    margin-bottom: 4vh;
+    margin: 2vh 0 4vh;
   }
   p {
     text-align: center;

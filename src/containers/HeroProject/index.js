@@ -18,9 +18,6 @@ const HeroProject = ({
       <Description>
         <h1>{title}</h1>
         <p>{description}</p>
-        <a className="site" href={liveUrl}>
-          Veja o site <FaExternalLinkAlt />
-        </a>
       </Description>
       <Content>
         <h4>Imagens</h4>
@@ -45,6 +42,9 @@ const HeroProject = ({
             </li>
           ))}
         </Techs>
+        <a className="site" href={liveUrl}>
+          Veja o site <FaExternalLinkAlt />
+        </a>
       </Content>
     </Container>
   )
