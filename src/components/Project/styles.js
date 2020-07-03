@@ -39,11 +39,11 @@ export const Description = styled.div`
   align-items: center;
   align-self: center;
   h4 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     text-align: center;
     color: var(--gray);
     font-weight: 900;
-    margin: 2vh 0 4vh;
+    margin: 0vh 0 4vh;
   }
   p {
     text-align: center;

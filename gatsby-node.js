@@ -20,6 +20,13 @@ exports.createPages = async ({ graphql, actions }) => {
               handle
               services
               liveUrl
+              defaultMockup {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    src
+                  }
+                }
+              }
               defaultImg {
                 childImageSharp {
                   fluid(maxHeight: 550) {

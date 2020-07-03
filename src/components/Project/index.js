@@ -19,6 +19,13 @@ const Project = () => {
               handle
               services
               liveUrl
+              defaultMockup {
+                childImageSharp {
+                  fluid(maxHeight: 550) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               defaultImg {
                 childImageSharp {
                   fluid(maxHeight: 550) {
@@ -63,7 +70,9 @@ const Project = () => {
         <Container key={generateKey(project.node.frontmatter.handle)}>
           <Image className="image">
             <Img
-              fluid={project.node.frontmatter.defaultImg.childImageSharp.fluid}
+              fluid={
+                project.node.frontmatter.defaultMockup.childImageSharp.fluid
+              }
               alt="An image apresentation from current project"
             />
           </Image>

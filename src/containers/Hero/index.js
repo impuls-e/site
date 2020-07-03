@@ -23,7 +23,7 @@ const Hero = () => {
         <HeroContent>
           <h1>Impuls-e</h1>
           <h2>
-            <span>Sites</span> e <span>Soluções</span> inteligentes.
+            <span>sites</span> e <span>soluções</span> inteligentes.
           </h2>
           <AnchorLink
             className="button"
